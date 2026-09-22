@@ -1,0 +1,38 @@
+/* frontend/src/assets/themes/tokens.css */
+:root {
+  --kc-1: 4px;
+  --kc-2: 8px;
+  --kc-3: 16px;
+  --kc-4: 24px;
+  --kc-5: 40px;
+  --bo-goc: 10px;
+  --chu-than: "Roboto", system-ui, -apple-system, sans-serif;
+  --co-chu-than: 16px;
+  --do-cao-dong: 1.55;
+}
+
+/* Chu de sang (mac dinh) */
+[data-theme="sang"] {
+  --mau-nen: #FFFFFF;
+  --mau-nen-phu: #F2F5F9;
+  --mau-chu: #16202B;
+  --mau-chu-nhat: #566274;
+  --mau-chinh: #1C7293;
+  --mau-chinh-dam: #14556E;
+  --mau-nhan: #B85042;
+  --mau-vien: #D5DDE6;
+  --do-bong: 0 1px 3px rgba(22, 32, 43, .12);
+}
+
+/* Chu de toi */
+[data-theme="toi"] {
+  --mau-nen: #10161D;
+  --mau-nen-phu: #1A2330;
+  --mau-chu: #E8EDF3;
+  --mau-chu-nhat: #A3AFBE;
+  --mau-chinh: #4FB3D9;
+  --mau-chinh-dam: #79C9E8;
+  --mau-nhan: #E58C7F;
+  --mau-vien: #2A3542;
+  --do-bong: 0 1px 3px rgba(0, 0, 0, .5);
+}

@@ -28,19 +28,20 @@ class SearchController
         $limit    = max(1, min(50, (int)($_GET['limit'] ?? 10)));
         $offset   = ($page - 1) * $limit;
 
+        // Cho hiển thị tất cả các tour
         $conditions = ["1 = 1"];
         $params = [];
 
         if (!empty($keyword)) {
-            $conditions[] = "(name LIKE :keyword OR description LIKE :keyword)";
+            $conditions[] = "title LIKE :keyword";
             $params[':keyword'] = "%{$keyword}%";
         }
         if ($minPrice !== null && $minPrice >= 0) {
-            $conditions[] = "price >= :min_price";
+            $conditions[] = "base_price >= :min_price";
             $params[':min_price'] = $minPrice;
         }
         if ($maxPrice !== null && $maxPrice > 0) {
-            $conditions[] = "price <= :max_price";
+            $conditions[] = "base_price <= :max_price";
             $params[':max_price'] = $maxPrice;
         }
 
@@ -51,7 +52,11 @@ class SearchController
             $countStmt->execute($params);
             $totalItems = (int)$countStmt->fetchColumn();
 
-            $sql = "SELECT * FROM products WHERE {$whereSql} ORDER BY id DESC LIMIT :offset, :limit";
+            $sql = "SELECT id, title, slug, type, base_price, duration_days, capacity, cancel_policy, status 
+                    FROM products 
+                    WHERE {$whereSql} 
+                    ORDER BY id ASC 
+                    LIMIT :offset, :limit";
             $stmt = $this->db->prepare($sql);
             foreach ($params as $k => $v) {
                 $stmt->bindValue($k, $v);

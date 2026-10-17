@@ -1,0 +1,77 @@
+ma_diem_den,ten_diem_den,duong_dan_tinh,tinh_thanh,vung_mien,loai_hinh,vi_do,kinh_do,mua_phu_hop,thoi_luong_tham_quan_gio,gia_ve_tham_quan,suc_tai_ngay,trang_thai
+DD001,Làng gốm Tây Hồ,lang-gom-tay-ho-lao-cai,Lào Cai,Tây Bắc Bộ,Làng nghề truyền thống,22.441176,103.949079,Hè (T4–T6),3,40000,2000,hoat_dong
+DD002,Đồi chè Thiên Hương,doi-che-thien-huong-lao-cai,Lào Cai,Tây Bắc Bộ,Sinh thái nông nghiệp,22.586099,104.029335,Hè (T4–T6),5,40000,400,hoat_dong
+DD003,Đồi chè Hòa Xuân,doi-che-hoa-xuan-son-la,Sơn La,Tây Bắc Bộ,Sinh thái nông nghiệp,21.336802,104.049389,Thu (T7–T9),3,40000,600,hoat_dong
+DD004,Bãi biển Ngọc Trai,bai-bien-ngoc-trai-son-la,Sơn La,Tây Bắc Bộ,Bãi biển,21.292057,103.84001,Thu (T7–T9),8,120000,1200,hoat_dong
+DD005,Đền Thiên Hương,den-thien-huong-dien-bien,Điện Biên,Tây Bắc Bộ,Di tích lịch sử,21.244973,103.154706,Xuân (T1–T3),4,20000,800,hoat_dong
+DD006,Cánh đồng Thiên Hương,canh-dong-thien-huong-dien-bien,Điện Biên,Tây Bắc Bộ,Sinh thái nông nghiệp,21.408888,102.831892,Xuân (T1–T3),1.5,80000,1200,hoat_dong
+DD007,Đền Ban Mai,den-ban-mai-hoa-binh,Hòa Bình,Tây Bắc Bộ,Di tích lịch sử,20.691508,105.246187,Thu (T7–T9),8,40000,1200,hoat_dong
+DD008,Đảo Hương Giang,dao-huong-giang-hoa-binh,Hòa Bình,Tây Bắc Bộ,Bãi biển,20.874981,105.359737,Hè (T4–T6),3,120000,200,hoat_dong
+DD009,Cánh đồng Ngọc Trai,canh-dong-ngoc-trai-yen-bai,Yên Bái,Tây Bắc Bộ,Sinh thái nông nghiệp,21.892021,104.923064,Xuân (T1–T3),6,150000,1200,hoat_dong
+DD010,Thành cổ Tây Hồ,thanh-co-tay-ho-yen-bai,Yên Bái,Tây Bắc Bộ,Di sản văn hóa,21.562451,104.75673,Thu (T7–T9),8,150000,200,hoat_dong
+DD011,Thác Đại Lộc,thac-dai-loc-ha-giang,Hà Giang,Đông Bắc Bộ,Danh thắng thiên nhiên,22.94872,104.741563,Xuân (T1–T3),5,20000,1200,hoat_dong
+DD012,Rừng nguyên sinh Ban Mai,rung-nguyen-sinh-ban-mai-ha-giang,Hà Giang,Đông Bắc Bộ,Vườn quốc gia,22.695825,104.947942,Thu (T7–T9),4,20000,400,hoat_dong
+DD013,Miệt vườn Phú Cường,miet-vuon-phu-cuong-cao-bang,Cao Bằng,Đông Bắc Bộ,Sinh thái nông nghiệp,22.538337,106.372525,Xuân (T1–T3),5,20000,800,hoat_dong
+DD014,Rừng nguyên sinh Long Hải,rung-nguyen-sinh-long-hai-cao-bang,Cao Bằng,Đông Bắc Bộ,Vườn quốc gia,22.730581,106.352396,Xuân (T1–T3),6,60000,800,hoat_dong
+DD015,Thành cổ Phú Cường,thanh-co-phu-cuong-quang-ninh,Quảng Ninh,Đông Bắc Bộ,Di sản văn hóa,21.087329,107.053659,Hè (T4–T6),1.5,60000,400,hoat_dong
+DD016,Thác Thiên Hương,thac-thien-huong-quang-ninh,Quảng Ninh,Đông Bắc Bộ,Danh thắng thiên nhiên,20.887105,107.238765,Hè (T4–T6),8,40000,200,hoat_dong
+DD017,Đảo Thanh Bình,dao-thanh-binh-lang-son,Lạng Sơn,Đông Bắc Bộ,Bãi biển,21.846731,107.000244,Xuân (T1–T3),5,250000,800,hoat_dong
+DD018,Vịnh Ngọc Trai,vinh-ngoc-trai-lang-son,Lạng Sơn,Đông Bắc Bộ,Bãi biển,21.771572,106.796337,Thu (T7–T9),1.5,0,1200,hoat_dong
+DD019,Chùa Hương Giang,chua-huong-giang-tuyen-quang,Tuyên Quang,Đông Bắc Bộ,Di tích lịch sử,21.756716,105.191515,Thu (T7–T9),1.5,0,400,hoat_dong
+DD020,Miệt vườn Tây Hồ,miet-vuon-tay-ho-tuyen-quang,Tuyên Quang,Đông Bắc Bộ,Sinh thái nông nghiệp,21.738328,104.99213,Thu (T7–T9),2,40000,200,hoat_dong
+DD021,Đền Thanh Bình,den-thanh-binh-ha-noi,Hà Nội,Đồng bằng sông Hồng,Di tích lịch sử,21.27949,105.682244,Xuân (T1–T3),2,60000,2000,hoat_dong
+DD022,Khu di sản Mỹ Cảnh,khu-di-san-my-canh-ha-noi,Hà Nội,Đồng bằng sông Hồng,Di sản văn hóa,20.881594,106.055909,Đông (T10–T12),5,20000,400,hoat_dong
+DD023,Vườn quốc gia Thanh Bình,vuon-quoc-gia-thanh-binh-ninh-binh,Ninh Bình,Đồng bằng sông Hồng,Vườn quốc gia,20.265606,106.21207,Đông (T10–T12),4,40000,600,hoat_dong
+DD024,Địa đạo Đại Lộc,dia-dao-dai-loc-ninh-binh,Ninh Bình,Đồng bằng sông Hồng,Di tích lịch sử,20.276834,105.881942,Hè (T4–T6),8,60000,800,hoat_dong
+DD025,Bán đảo Long Hải,ban-dao-long-hai-hai-phong,Hải Phòng,Đồng bằng sông Hồng,Bãi biển,20.664819,106.473971,Thu (T7–T9),1.5,250000,800,hoat_dong
+DD026,Vườn quốc gia Hòa Xuân,vuon-quoc-gia-hoa-xuan-hai-phong,Hải Phòng,Đồng bằng sông Hồng,Vườn quốc gia,21.04548,106.775251,Hè (T4–T6),1.5,20000,800,hoat_dong
+DD027,Phố cổ Long Hải,pho-co-long-hai-nam-dinh,Nam Định,Đồng bằng sông Hồng,Di sản văn hóa,20.633761,106.415082,Thu (T7–T9),5,120000,400,hoat_dong
+DD028,Thành cổ Thiên Hương,thanh-co-thien-huong-nam-dinh,Nam Định,Đồng bằng sông Hồng,Di sản văn hóa,20.56618,106.045884,Xuân (T1–T3),6,0,1200,hoat_dong
+DD029,Đỉnh núi Mỹ Cảnh,dinh-nui-my-canh-bac-ninh,Bắc Ninh,Đồng bằng sông Hồng,Danh thắng thiên nhiên,21.204698,105.94437,Đông (T10–T12),2,20000,800,hoat_dong
+DD030,Bán đảo Thanh Bình,ban-dao-thanh-binh-bac-ninh,Bắc Ninh,Đồng bằng sông Hồng,Bãi biển,20.953269,106.15418,Hè (T4–T6),4,20000,3000,hoat_dong
+DD031,Đảo Mỹ Cảnh,dao-my-canh-thanh-hoa,Thanh Hóa,Bắc Trung Bộ,Bãi biển,19.833169,105.830977,Thu (T7–T9),3,150000,3000,hoat_dong
+DD032,Chợ đêm Thiên Hương,cho-dem-thien-huong-thanh-hoa,Thanh Hóa,Bắc Trung Bộ,Đô thị – mua sắm,19.624798,105.861602,Xuân (T1–T3),5,250000,800,hoat_dong
+DD033,Chợ đêm Ngọc Trai,cho-dem-ngoc-trai-nghe-an,Nghệ An,Bắc Trung Bộ,Đô thị – mua sắm,18.900846,105.535113,Thu (T7–T9),8,250000,400,hoat_dong
+DD034,Khu tưởng niệm Ban Mai,khu-tuong-niem-ban-mai-nghe-an,Nghệ An,Bắc Trung Bộ,Di tích lịch sử,18.975654,105.928995,Hè (T4–T6),1.5,60000,400,hoat_dong
+DD035,Đồi chè Ban Mai,doi-che-ban-mai-quang-binh,Quảng Bình,Bắc Trung Bộ,Sinh thái nông nghiệp,17.497671,106.387743,Thu (T7–T9),3,20000,1200,hoat_dong
+DD036,Đền An Khê,den-an-khe-quang-binh,Quảng Bình,Bắc Trung Bộ,Di tích lịch sử,17.356474,106.723833,Đông (T10–T12),2,250000,200,hoat_dong
+DD037,Đồi chè Hòa Xuân,doi-che-hoa-xuan-hue,Huế,Bắc Trung Bộ,Sinh thái nông nghiệp,16.509328,107.356195,Hè (T4–T6),2,80000,600,hoat_dong
+DD038,Khu bảo tồn Mỹ Cảnh,khu-bao-ton-my-canh-hue,Huế,Bắc Trung Bộ,Vườn quốc gia,16.233262,107.359404,Hè (T4–T6),5,80000,3000,hoat_dong
+DD039,Làng mây tre Mỹ Cảnh,lang-may-tre-my-canh-ha-tinh,Hà Tĩnh,Bắc Trung Bộ,Làng nghề truyền thống,18.146494,106.028631,Xuân (T1–T3),4,0,2000,hoat_dong
+DD040,Khu di sản Hòa Xuân,khu-di-san-hoa-xuan-ha-tinh,Hà Tĩnh,Bắc Trung Bộ,Di sản văn hóa,18.488237,106.13878,Đông (T10–T12),3,120000,2000,hoat_dong
+DD041,Vườn quốc gia Hương Giang,vuon-quoc-gia-huong-giang-da-nang,Đà Nẵng,Nam Trung Bộ,Vườn quốc gia,16.080192,108.378458,Đông (T10–T12),4,250000,1200,hoat_dong
+DD042,Quần thể di sản Hương Giang,quan-the-di-san-huong-giang-da-nang,Đà Nẵng,Nam Trung Bộ,Di sản văn hóa,16.245279,108.05732,Hè (T4–T6),6,150000,2000,hoat_dong
+DD043,Đồi chè Phú Cường,doi-che-phu-cuong-quang-nam,Quảng Nam,Nam Trung Bộ,Sinh thái nông nghiệp,15.995581,108.295432,Thu (T7–T9),3,150000,2000,hoat_dong
+DD044,Thung lũng Thanh Bình,thung-lung-thanh-binh-quang-nam,Quảng Nam,Nam Trung Bộ,Danh thắng thiên nhiên,16.082044,108.396221,Đông (T10–T12),8,150000,200,hoat_dong
+DD045,Thác Tây Hồ,thac-tay-ho-khanh-hoa,Khánh Hòa,Nam Trung Bộ,Danh thắng thiên nhiên,12.487094,109.019822,Xuân (T1–T3),5,60000,2000,tam_dung
+DD046,Miệt vườn Bình Minh,miet-vuon-binh-minh-khanh-hoa,Khánh Hòa,Nam Trung Bộ,Sinh thái nông nghiệp,12.06701,109.362597,Hè (T4–T6),4,80000,2000,hoat_dong
+DD047,Bán đảo Hương Giang,ban-dao-huong-giang-binh-dinh,Bình Định,Nam Trung Bộ,Bãi biển,13.779034,109.426184,Hè (T4–T6),5,80000,200,hoat_dong
+DD048,Chợ đêm Hòa Xuân,cho-dem-hoa-xuan-binh-dinh,Bình Định,Nam Trung Bộ,Đô thị – mua sắm,13.856545,108.999516,Đông (T10–T12),3,20000,2000,hoat_dong
+DD049,Thác Bình Minh,thac-binh-minh-ninh-thuan,Ninh Thuận,Nam Trung Bộ,Danh thắng thiên nhiên,11.346167,108.809829,Xuân (T1–T3),1.5,120000,400,hoat_dong
+DD050,Đồi chè Hương Giang,doi-che-huong-giang-ninh-thuan,Ninh Thuận,Nam Trung Bộ,Sinh thái nông nghiệp,11.728387,109.238837,Thu (T7–T9),2,0,2000,hoat_dong
+DD051,Quảng trường Tây Hồ,quang-truong-tay-ho-lam-dong,Lâm Đồng,Tây Nguyên,Đô thị – mua sắm,11.872583,108.508375,Xuân (T1–T3),3,60000,1200,hoat_dong
+DD052,Khu bảo tồn Phú Cường,khu-bao-ton-phu-cuong-lam-dong,Lâm Đồng,Tây Nguyên,Vườn quốc gia,11.700314,108.503931,Xuân (T1–T3),4,60000,2000,hoat_dong
+DD053,Bãi biển Hương Giang,bai-bien-huong-giang-dak-lak,Đắk Lắk,Tây Nguyên,Bãi biển,12.926131,108.224066,Xuân (T1–T3),6,80000,600,hoat_dong
+DD054,Bãi biển Đại Lộc,bai-bien-dai-loc-dak-lak,Đắk Lắk,Tây Nguyên,Bãi biển,12.865194,108.204275,Đông (T10–T12),4,20000,200,hoat_dong
+DD055,Quảng trường Vân Sơn,quang-truong-van-son-gia-lai,Gia Lai,Tây Nguyên,Đô thị – mua sắm,14.184554,107.848316,Hè (T4–T6),4,120000,1200,hoat_dong
+DD056,Làng gốm Thanh Bình,lang-gom-thanh-binh-gia-lai,Gia Lai,Tây Nguyên,Làng nghề truyền thống,13.789401,108.010003,Xuân (T1–T3),3,120000,1200,hoat_dong
+DD057,Đồi chè Thanh Bình,doi-che-thanh-binh-kon-tum,Kon Tum,Tây Nguyên,Sinh thái nông nghiệp,14.305864,108.111512,Thu (T7–T9),2,120000,200,hoat_dong
+DD058,Rừng nguyên sinh Hòa Xuân,rung-nguyen-sinh-hoa-xuan-kon-tum,Kon Tum,Tây Nguyên,Vườn quốc gia,14.33695,107.785073,Xuân (T1–T3),5,250000,2000,hoat_dong
+DD059,Thác Ngọc Trai,thac-ngoc-trai-tp-ho-chi-minh,TP. Hồ Chí Minh,Đông Nam Bộ,Danh thắng thiên nhiên,10.545358,106.723907,Xuân (T1–T3),1.5,120000,600,hoat_dong
+DD060,Làng lụa Long Hải,lang-lua-long-hai-tp-ho-chi-minh,TP. Hồ Chí Minh,Đông Nam Bộ,Làng nghề truyền thống,10.751122,106.799227,Thu (T7–T9),6,0,400,hoat_dong
+DD061,Làng mây tre Phú Cường,lang-may-tre-phu-cuong-ba-ria-vung-tau,Bà Rịa – Vũng Tàu,Đông Nam Bộ,Làng nghề truyền thống,10.20109,106.830289,Xuân (T1–T3),6,120000,400,hoat_dong
+DD062,Phố cổ Thiên Hương,pho-co-thien-huong-ba-ria-vung-tau,Bà Rịa – Vũng Tàu,Đông Nam Bộ,Di sản văn hóa,10.238163,106.917103,Thu (T7–T9),6,60000,2000,hoat_dong
+DD063,Khu trung tâm An Khê,khu-trung-tam-an-khe-dong-nai,Đồng Nai,Đông Nam Bộ,Đô thị – mua sắm,10.713592,106.742518,Xuân (T1–T3),1.5,150000,600,hoat_dong
+DD064,Khu di sản Mỹ Cảnh,khu-di-san-my-canh-dong-nai,Đồng Nai,Đông Nam Bộ,Di sản văn hóa,10.733839,106.693563,Xuân (T1–T3),5,150000,400,hoat_dong
+DD065,Quần thể di sản Hòa Xuân,quan-the-di-san-hoa-xuan-tay-ninh,Tây Ninh,Đông Nam Bộ,Di sản văn hóa,11.377728,105.97283,Xuân (T1–T3),6,0,1200,hoat_dong
+DD066,Hang động Hòa Xuân,hang-dong-hoa-xuan-tay-ninh,Tây Ninh,Đông Nam Bộ,Danh thắng thiên nhiên,11.550892,106.085216,Thu (T7–T9),6,120000,200,hoat_dong
+DD067,Quảng trường Ngọc Trai,quang-truong-ngoc-trai-can-tho,Cần Thơ,Đồng bằng sông Cửu Long,Đô thị – mua sắm,10.14208,105.976746,Hè (T4–T6),8,80000,400,tam_dung
+DD068,Phố đi bộ Thiên Hương,pho-di-bo-thien-huong-can-tho,Cần Thơ,Đồng bằng sông Cửu Long,Đô thị – mua sắm,10.250193,105.576313,Hè (T4–T6),8,150000,2000,hoat_dong
+DD069,Chùa Thiên Hương,chua-thien-huong-an-giang,An Giang,Đồng bằng sông Cửu Long,Di tích lịch sử,10.337624,105.192366,Hè (T4–T6),4,20000,800,hoat_dong
+DD070,Đền An Khê,den-an-khe-an-giang,An Giang,Đồng bằng sông Cửu Long,Di tích lịch sử,10.503739,105.173088,Đông (T10–T12),4,60000,1200,hoat_dong
+DD071,Làng lụa Thanh Bình,lang-lua-thanh-binh-kien-giang,Kiên Giang,Đồng bằng sông Cửu Long,Làng nghề truyền thống,10.245175,104.865221,Thu (T7–T9),8,250000,1200,hoat_dong
+DD072,Khu trung tâm Phú Cường,khu-trung-tam-phu-cuong-kien-giang,Kiên Giang,Đồng bằng sông Cửu Long,Đô thị – mua sắm,9.95062,105.096643,Đông (T10–T12),6,60000,3000,hoat_dong
+DD073,Địa đạo Đại Lộc,dia-dao-dai-loc-ca-mau,Cà Mau,Đồng bằng sông Cửu Long,Di tích lịch sử,9.336996,105.010447,Hè (T4–T6),8,40000,3000,hoat_dong
+DD074,Làng mây tre An Khê,lang-may-tre-an-khe-ca-mau,Cà Mau,Đồng bằng sông Cửu Long,Làng nghề truyền thống,9.052445,105.068567,Xuân (T1–T3),2,250000,2000,tam_dung
+DD075,Làng lụa An Khê,lang-lua-an-khe-ben-tre,Bến Tre,Đồng bằng sông Cửu Long,Làng nghề truyền thống,10.174659,106.236845,Xuân (T1–T3),2,250000,200,hoat_dong
+DD076,Vườn quốc gia Vân Sơn,vuon-quoc-gia-van-son-ben-tre,Bến Tre,Đồng bằng sông Cửu Long,Vườn quốc gia,10.326503,106.429055,Xuân (T1–T3),1.5,60000,2000,hoat_dong

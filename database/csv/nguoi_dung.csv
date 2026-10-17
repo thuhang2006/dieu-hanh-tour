@@ -1,0 +1,111 @@
+ma_nguoi_dung,ho_ten,ten_dang_nhap,thu_dien_tu_mo_phong,vai_tro,ma_ncc,so_dien_thoai_mo_phong,so_thich,ngay_tao,trang_thai
+ND0001,Hoàng Thị Oanh,hoang.thi.oanh1,nd0001@example.test,quan_tri,,0944785149,Vườn quốc gia,2023-08-19,kich_hoat
+ND0002,Vũ Hải Hùng,vu.hai.hung2,nd0002@example.test,quan_tri,,0987979149,"Di sản văn hóa, Danh thắng thiên nhiên",2023-05-15,kich_hoat
+ND0003,Dương Văn Dũng,duong.van.dung3,nd0003@example.test,nha_cung_cap,NCC001,0926830427,"Vườn quốc gia, Làng nghề truyền thống",2025-11-01,kich_hoat
+ND0004,Phạm Thu Linh,pham.thu.linh4,nd0004@example.test,nha_cung_cap,NCC002,0945022841,"Đô thị – mua sắm, Di tích lịch sử",2025-12-14,kich_hoat
+ND0005,Bùi Đức Hà,bui.duc.ha5,nd0005@example.test,nha_cung_cap,NCC003,0955449587,"Sinh thái nông nghiệp, Đô thị – mua sắm, Danh thắng thiên nhiên",2025-11-13,kich_hoat
+ND0006,Hoàng Ngọc Lan,hoang.ngoc.lan6,nd0006@example.test,nha_cung_cap,NCC004,0968603694,"Đô thị – mua sắm, Di sản văn hóa, Làng nghề truyền thống",2023-05-02,kich_hoat
+ND0007,Đỗ Văn Đạt,do.van.dat7,nd0007@example.test,nha_cung_cap,NCC005,0953562031,Đô thị – mua sắm,2023-10-01,kich_hoat
+ND0008,Trần Thanh Trang,tran.thanh.trang8,nd0008@example.test,nha_cung_cap,NCC006,0978215075,"Di tích lịch sử, Làng nghề truyền thống",2025-11-06,kich_hoat
+ND0009,Lê Hải Lan,le.hai.lan9,nd0009@example.test,nha_cung_cap,NCC007,0980596166,Danh thắng thiên nhiên,2024-03-06,kich_hoat
+ND0010,Dương Khánh Thảo,duong.khanh.thao10,nd0010@example.test,nha_cung_cap,NCC008,0998044048,Bãi biển,2024-07-09,kich_hoat
+ND0011,Lý Minh Đạt,ly.minh.dat11,nd0011@example.test,nha_cung_cap,NCC009,0936239361,Di tích lịch sử,2023-07-15,kich_hoat
+ND0012,Hoàng Văn Tuấn,hoang.van.tuan12,nd0012@example.test,nha_cung_cap,NCC010,0921287387,"Sinh thái nông nghiệp, Danh thắng thiên nhiên, Vườn quốc gia",2023-10-19,kich_hoat
+ND0013,Hồ Minh Sơn,ho.minh.son13,nd0013@example.test,nha_cung_cap,NCC011,0937964552,Di sản văn hóa,2024-07-11,kich_hoat
+ND0014,Hoàng Thu Thảo,hoang.thu.thao14,nd0014@example.test,nha_cung_cap,NCC012,0950890912,"Bãi biển, Di sản văn hóa",2025-05-21,kich_hoat
+ND0015,Phạm Minh Kiên,pham.minh.kien15,nd0015@example.test,nha_cung_cap,NCC013,0965538218,"Vườn quốc gia, Di sản văn hóa",2023-12-18,kich_hoat
+ND0016,Bùi Thị Phúc,bui.thi.phuc16,nd0016@example.test,nha_cung_cap,NCC014,0928378668,"Di sản văn hóa, Bãi biển",2025-10-01,kich_hoat
+ND0017,Lê Văn Quân,le.van.quan17,nd0017@example.test,nha_cung_cap,NCC015,0987768407,"Bãi biển, Di sản văn hóa",2025-07-26,kich_hoat
+ND0018,Hoàng Hữu Tuấn,hoang.huu.tuan18,nd0018@example.test,nha_cung_cap,NCC016,0948395771,Di tích lịch sử,2024-11-23,kich_hoat
+ND0019,Lý Ngọc Kiên,ly.ngoc.kien19,nd0019@example.test,nha_cung_cap,NCC017,0961374120,"Di sản văn hóa, Đô thị – mua sắm, Di tích lịch sử",2024-11-16,kich_hoat
+ND0020,Bùi Khánh Trang,bui.khanh.trang20,nd0020@example.test,nha_cung_cap,NCC018,0922382683,"Làng nghề truyền thống, Bãi biển, Di tích lịch sử",2025-11-15,kich_hoat
+ND0021,Dương Thu Bình,duong.thu.binh21,nd0021@example.test,nha_cung_cap,NCC019,0915268235,Danh thắng thiên nhiên,2025-04-12,kich_hoat
+ND0022,Bùi Thị Sơn,bui.thi.son22,nd0022@example.test,nha_cung_cap,NCC020,0920554525,Đô thị – mua sắm,2024-12-09,kich_hoat
+ND0023,Hồ Đức Dũng,ho.duc.dung23,nd0023@example.test,huong_dan_vien,,0912664773,"Di sản văn hóa, Đô thị – mua sắm",2025-09-08,kich_hoat
+ND0024,Ngô Quang Nam,ngo.quang.nam24,nd0024@example.test,huong_dan_vien,,0970465942,"Danh thắng thiên nhiên, Đô thị – mua sắm",2024-12-03,kich_hoat
+ND0025,Đỗ Khánh Kiên,do.khanh.kien25,nd0025@example.test,huong_dan_vien,,0918979233,"Danh thắng thiên nhiên, Di tích lịch sử, Làng nghề truyền thống",2024-12-14,kich_hoat
+ND0026,Phan Hữu Hùng,phan.huu.hung26,nd0026@example.test,huong_dan_vien,,0961956695,"Đô thị – mua sắm, Danh thắng thiên nhiên, Sinh thái nông nghiệp",2023-07-11,kich_hoat
+ND0027,Nguyễn Hữu Yến,nguyen.huu.yen27,nd0027@example.test,huong_dan_vien,,0967749918,Danh thắng thiên nhiên,2024-04-30,kich_hoat
+ND0028,Lý Thu Phúc,ly.thu.phuc28,nd0028@example.test,huong_dan_vien,,0910399903,"Sinh thái nông nghiệp, Di sản văn hóa, Vườn quốc gia",2024-11-28,kich_hoat
+ND0029,Hồ Đức Trang,ho.duc.trang29,nd0029@example.test,huong_dan_vien,,0977560630,"Vườn quốc gia, Đô thị – mua sắm, Di tích lịch sử",2023-10-06,kich_hoat
+ND0030,Lý Thu Quân,ly.thu.quan30,nd0030@example.test,huong_dan_vien,,0952255680,"Di sản văn hóa, Danh thắng thiên nhiên, Đô thị – mua sắm",2025-03-26,kich_hoat
+ND0031,Phan Đức Đạt,phan.duc.dat31,nd0031@example.test,kiem_thu,,0957362896,"Di tích lịch sử, Bãi biển, Vườn quốc gia",2025-01-06,kich_hoat
+ND0032,Trần Minh Chi,tran.minh.chi32,nd0032@example.test,kiem_thu,,0919553167,"Bãi biển, Đô thị – mua sắm",2024-07-22,kich_hoat
+ND0033,Đặng Hữu Hà,dang.huu.ha33,nd0033@example.test,kiem_thu,,0943313897,"Vườn quốc gia, Danh thắng thiên nhiên",2024-01-06,kich_hoat
+ND0034,Vũ Đức Phúc,vu.duc.phuc34,nd0034@example.test,kiem_thu,,0943084788,Vườn quốc gia,2024-02-23,kich_hoat
+ND0035,Đặng Ngọc An,dang.ngoc.an35,nd0035@example.test,kiem_thu,,0923127015,"Làng nghề truyền thống, Vườn quốc gia, Danh thắng thiên nhiên",2025-09-15,kich_hoat
+ND0036,Phan Ngọc Kiên,phan.ngoc.kien36,nd0036@example.test,khach_hang,,0955396890,"Đô thị – mua sắm, Vườn quốc gia, Di tích lịch sử",2024-10-14,kich_hoat
+ND0037,Ngô Khánh Hùng,ngo.khanh.hung37,nd0037@example.test,khach_hang,,0912599215,"Vườn quốc gia, Di tích lịch sử, Sinh thái nông nghiệp",2025-08-25,kich_hoat
+ND0038,Trần Minh Hà,tran.minh.ha38,nd0038@example.test,khach_hang,,0941042727,"Di sản văn hóa, Bãi biển, Đô thị – mua sắm",2023-08-09,kich_hoat
+ND0039,Nguyễn Thanh Hà,nguyen.thanh.ha39,nd0039@example.test,khach_hang,,0994741942,Di sản văn hóa,2023-09-03,kich_hoat
+ND0040,Lý Thu Thảo,ly.thu.thao40,nd0040@example.test,khach_hang,,0937934685,"Di sản văn hóa, Di tích lịch sử",2023-08-25,kich_hoat
+ND0041,Đỗ Đức Trang,do.duc.trang41,nd0041@example.test,khach_hang,,0952002588,"Di tích lịch sử, Di sản văn hóa",2025-12-05,kich_hoat
+ND0042,Phạm Quang Quân,pham.quang.quan42,nd0042@example.test,khach_hang,,0989255954,"Di sản văn hóa, Bãi biển, Làng nghề truyền thống",2023-12-26,kich_hoat
+ND0043,Hồ Ngọc Quân,ho.ngoc.quan43,nd0043@example.test,khach_hang,,0968004295,Di sản văn hóa,2023-09-17,kich_hoat
+ND0044,Phạm Hữu Đạt,pham.huu.dat44,nd0044@example.test,khach_hang,,0965495032,"Bãi biển, Làng nghề truyền thống, Danh thắng thiên nhiên",2023-07-17,kich_hoat
+ND0045,Hồ Ngọc Kiên,ho.ngoc.kien45,nd0045@example.test,khach_hang,,0968789994,Bãi biển,2023-07-19,kich_hoat
+ND0046,Phạm Minh Trang,pham.minh.trang46,nd0046@example.test,khach_hang,,0939303170,Di tích lịch sử,2024-01-06,kich_hoat
+ND0047,Ngô Hữu Kiên,ngo.huu.kien47,nd0047@example.test,khach_hang,,0913942079,"Làng nghề truyền thống, Bãi biển, Di sản văn hóa",2025-08-31,kich_hoat
+ND0048,Bùi Gia Oanh,bui.gia.oanh48,nd0048@example.test,khach_hang,,0967057237,"Vườn quốc gia, Danh thắng thiên nhiên, Bãi biển",2025-03-06,kich_hoat
+ND0049,Bùi Ngọc Linh,bui.ngoc.linh49,nd0049@example.test,khach_hang,,0956050529,"Vườn quốc gia, Sinh thái nông nghiệp, Danh thắng thiên nhiên",2025-05-01,kich_hoat
+ND0050,Phạm Gia Quân,pham.gia.quan50,nd0050@example.test,khach_hang,,0986756798,"Danh thắng thiên nhiên, Bãi biển, Làng nghề truyền thống",2024-07-27,kich_hoat
+ND0051,Vũ Hữu Hà,vu.huu.ha51,nd0051@example.test,khach_hang,,0969002042,Đô thị – mua sắm,2023-08-31,kich_hoat
+ND0052,Bùi Thanh Hà,bui.thanh.ha52,nd0052@example.test,khach_hang,,0978548849,"Vườn quốc gia, Đô thị – mua sắm, Bãi biển",2024-08-15,kich_hoat
+ND0053,Đỗ Đức Quân,do.duc.quan53,nd0053@example.test,khach_hang,,0980637885,"Bãi biển, Di tích lịch sử",2025-11-18,kich_hoat
+ND0054,Hồ Thanh Tuấn,ho.thanh.tuan54,nd0054@example.test,khach_hang,,0938770409,"Di sản văn hóa, Vườn quốc gia, Sinh thái nông nghiệp",2025-08-11,kich_hoat
+ND0055,Trần Khánh Trang,tran.khanh.trang55,nd0055@example.test,khach_hang,,0943662872,"Vườn quốc gia, Di sản văn hóa, Bãi biển",2023-12-05,kich_hoat
+ND0056,Lý Hữu Quân,ly.huu.quan56,nd0056@example.test,khach_hang,,0964983256,"Vườn quốc gia, Bãi biển, Làng nghề truyền thống",2025-01-05,kich_hoat
+ND0057,Dương Ngọc An,duong.ngoc.an57,nd0057@example.test,khach_hang,,0951619926,Danh thắng thiên nhiên,2025-06-06,kich_hoat
+ND0058,Lê Minh Khoa,le.minh.khoa58,nd0058@example.test,khach_hang,,0943532162,"Đô thị – mua sắm, Làng nghề truyền thống, Vườn quốc gia",2023-08-20,kich_hoat
+ND0059,Phan Quang Linh,phan.quang.linh59,nd0059@example.test,khach_hang,,0942575635,"Di tích lịch sử, Làng nghề truyền thống, Sinh thái nông nghiệp",2023-08-24,kich_hoat
+ND0060,Lê Quang Vy,le.quang.vy60,nd0060@example.test,khach_hang,,0932755652,"Làng nghề truyền thống, Bãi biển, Di tích lịch sử",2025-11-03,kich_hoat
+ND0061,Trần Minh Kiên,tran.minh.kien61,nd0061@example.test,khach_hang,,0978918748,"Sinh thái nông nghiệp, Di tích lịch sử",2024-09-08,kich_hoat
+ND0062,Hoàng Ngọc Yến,hoang.ngoc.yen62,nd0062@example.test,khach_hang,,0959041733,Di sản văn hóa,2025-04-05,kich_hoat
+ND0063,Hoàng Hữu Bình,hoang.huu.binh63,nd0063@example.test,khach_hang,,0969231558,Sinh thái nông nghiệp,2024-02-24,kich_hoat
+ND0064,Ngô Thị Yến,ngo.thi.yen64,nd0064@example.test,khach_hang,,0951486021,Sinh thái nông nghiệp,2023-05-24,kich_hoat
+ND0065,Dương Thu Nam,duong.thu.nam65,nd0065@example.test,khach_hang,,0934251414,"Sinh thái nông nghiệp, Đô thị – mua sắm, Di tích lịch sử",2025-04-22,kich_hoat
+ND0066,Ngô Minh Mai,ngo.minh.mai66,nd0066@example.test,khach_hang,,0963911381,Vườn quốc gia,2024-10-14,kich_hoat
+ND0067,Hồ Đức Yến,ho.duc.yen67,nd0067@example.test,khach_hang,,0989260780,Đô thị – mua sắm,2023-05-20,kich_hoat
+ND0068,Hoàng Minh Linh,hoang.minh.linh68,nd0068@example.test,khach_hang,,0955007726,"Làng nghề truyền thống, Di sản văn hóa",2024-04-11,kich_hoat
+ND0069,Đặng Thị Sơn,dang.thi.son69,nd0069@example.test,khach_hang,,0972316056,"Sinh thái nông nghiệp, Danh thắng thiên nhiên, Di tích lịch sử",2023-07-27,kich_hoat
+ND0070,Phan Quang Linh,phan.quang.linh70,nd0070@example.test,khach_hang,,0952196161,"Di sản văn hóa, Đô thị – mua sắm",2025-08-06,kich_hoat
+ND0071,Lê Ngọc Yến,le.ngoc.yen71,nd0071@example.test,khach_hang,,0959752438,"Bãi biển, Vườn quốc gia, Di tích lịch sử",2024-03-26,kich_hoat
+ND0072,Trần Ngọc Bình,tran.ngoc.binh72,nd0072@example.test,khach_hang,,0926717014,"Làng nghề truyền thống, Vườn quốc gia, Di tích lịch sử",2023-06-23,kich_hoat
+ND0073,Nguyễn Khánh Mai,nguyen.khanh.mai73,nd0073@example.test,khach_hang,,0975137986,Di tích lịch sử,2024-04-01,khoa
+ND0074,Lý Minh Thảo,ly.minh.thao74,nd0074@example.test,khach_hang,,0937237089,Di sản văn hóa,2024-07-27,kich_hoat
+ND0075,Phan Thu Mai,phan.thu.mai75,nd0075@example.test,khach_hang,,0959162645,Di sản văn hóa,2025-04-17,kich_hoat
+ND0076,Đỗ Thanh Lan,do.thanh.lan76,nd0076@example.test,khach_hang,,0912774274,Danh thắng thiên nhiên,2025-09-19,kich_hoat
+ND0077,Phan Hữu An,phan.huu.an77,nd0077@example.test,khach_hang,,0977274783,"Di tích lịch sử, Đô thị – mua sắm",2024-10-02,kich_hoat
+ND0078,Ngô Khánh Yến,ngo.khanh.yen78,nd0078@example.test,khach_hang,,0917445991,"Di sản văn hóa, Danh thắng thiên nhiên",2025-11-01,kich_hoat
+ND0079,Trần Thị Hà,tran.thi.ha79,nd0079@example.test,khach_hang,,0958901946,"Danh thắng thiên nhiên, Làng nghề truyền thống, Vườn quốc gia",2025-01-20,kich_hoat
+ND0080,Đỗ Thanh Nam,do.thanh.nam80,nd0080@example.test,khach_hang,,0922597562,"Danh thắng thiên nhiên, Di sản văn hóa",2024-09-14,kich_hoat
+ND0081,Đỗ Văn Dũng,do.van.dung81,nd0081@example.test,khach_hang,,0969197566,Danh thắng thiên nhiên,2024-01-03,kich_hoat
+ND0082,Trần Khánh Hà,tran.khanh.ha82,nd0082@example.test,khach_hang,,0944360911,"Di sản văn hóa, Sinh thái nông nghiệp",2024-07-29,kich_hoat
+ND0083,Ngô Đức Hùng,ngo.duc.hung83,nd0083@example.test,khach_hang,,0976085848,Bãi biển,2025-09-30,khoa
+ND0084,Lê Hải Bình,le.hai.binh84,nd0084@example.test,khach_hang,,0974822901,Vườn quốc gia,2024-08-02,kich_hoat
+ND0085,Vũ Hải Dũng,vu.hai.dung85,nd0085@example.test,khach_hang,,0915491096,Di tích lịch sử,2024-01-27,kich_hoat
+ND0086,Nguyễn Văn Nhung,nguyen.van.nhung86,nd0086@example.test,khach_hang,,0965126677,Di tích lịch sử,2024-02-14,kich_hoat
+ND0087,Hoàng Khánh An,hoang.khanh.an87,nd0087@example.test,khach_hang,,0988994994,"Bãi biển, Sinh thái nông nghiệp, Danh thắng thiên nhiên",2025-03-25,kich_hoat
+ND0088,Nguyễn Thị Dũng,nguyen.thi.dung88,nd0088@example.test,khach_hang,,0917626416,"Sinh thái nông nghiệp, Vườn quốc gia, Di sản văn hóa",2024-12-18,kich_hoat
+ND0089,Bùi Ngọc Chi,bui.ngoc.chi89,nd0089@example.test,khach_hang,,0958102103,"Danh thắng thiên nhiên, Bãi biển",2023-10-14,kich_hoat
+ND0090,Lê Hải Trang,le.hai.trang90,nd0090@example.test,khach_hang,,0911760478,"Làng nghề truyền thống, Vườn quốc gia",2024-08-07,kich_hoat
+ND0091,Vũ Gia Linh,vu.gia.linh91,nd0091@example.test,khach_hang,,0913989805,"Vườn quốc gia, Làng nghề truyền thống",2024-05-05,kich_hoat
+ND0092,Bùi Thị Lan,bui.thi.lan92,nd0092@example.test,khach_hang,,0961764619,"Bãi biển, Di tích lịch sử",2023-06-18,kich_hoat
+ND0093,Hoàng Hải Thảo,hoang.hai.thao93,nd0093@example.test,khach_hang,,0951202835,"Bãi biển, Làng nghề truyền thống, Sinh thái nông nghiệp",2023-05-06,kich_hoat
+ND0094,Nguyễn Hải Thảo,nguyen.hai.thao94,nd0094@example.test,khach_hang,,0981271935,"Bãi biển, Di tích lịch sử",2024-02-29,kich_hoat
+ND0095,Đặng Hữu Hà,dang.huu.ha95,nd0095@example.test,khach_hang,,0980538841,Bãi biển,2024-04-14,kich_hoat
+ND0096,Phạm Ngọc Mai,pham.ngoc.mai96,nd0096@example.test,khach_hang,,0931218388,Sinh thái nông nghiệp,2025-11-30,kich_hoat
+ND0097,Vũ Khánh An,vu.khanh.an97,nd0097@example.test,khach_hang,,0917300113,"Bãi biển, Đô thị – mua sắm, Di sản văn hóa",2025-08-07,kich_hoat
+ND0098,Lý Thu Phúc,ly.thu.phuc98,nd0098@example.test,khach_hang,,0982612252,"Bãi biển, Di tích lịch sử, Đô thị – mua sắm",2024-02-04,kich_hoat
+ND0099,Trần Thu Lan,tran.thu.lan99,nd0099@example.test,khach_hang,,0985562216,Sinh thái nông nghiệp,2025-05-10,kich_hoat
+ND0100,Ngô Ngọc Chi,ngo.ngoc.chi100,nd0100@example.test,khach_hang,,0957966601,"Di tích lịch sử, Sinh thái nông nghiệp, Di sản văn hóa",2024-10-18,kich_hoat
+ND0101,Lý Minh Phúc,ly.minh.phuc101,nd0101@example.test,khach_hang,,0944168658,Làng nghề truyền thống,2024-03-22,kich_hoat
+ND0102,Bùi Thanh Dũng,bui.thanh.dung102,nd0102@example.test,khach_hang,,0951395558,"Danh thắng thiên nhiên, Di sản văn hóa, Di tích lịch sử",2024-03-25,kich_hoat
+ND0103,Hoàng Đức Phúc,hoang.duc.phuc103,nd0103@example.test,khach_hang,,0982070335,Di tích lịch sử,2024-04-09,kich_hoat
+ND0104,Phạm Hải Giang,pham.hai.giang104,nd0104@example.test,khach_hang,,0959495200,"Danh thắng thiên nhiên, Đô thị – mua sắm, Di sản văn hóa",2025-03-07,kich_hoat
+ND0105,Vũ Đức Dũng,vu.duc.dung105,nd0105@example.test,khach_hang,,0957656601,Di tích lịch sử,2024-07-02,kich_hoat
+ND0106,Dương Hải Hùng,duong.hai.hung106,nd0106@example.test,khach_hang,,0914233067,Sinh thái nông nghiệp,2023-06-28,kich_hoat
+ND0107,Vũ Hải Hùng,vu.hai.hung107,nd0107@example.test,khach_hang,,0935832051,"Sinh thái nông nghiệp, Di tích lịch sử, Bãi biển",2024-12-03,kich_hoat
+ND0108,Phan Ngọc Chi,phan.ngoc.chi108,nd0108@example.test,khach_hang,,0982319483,"Đô thị – mua sắm, Sinh thái nông nghiệp, Danh thắng thiên nhiên",2025-03-18,kich_hoat
+ND0109,Trần Minh Giang,tran.minh.giang109,nd0109@example.test,khach_hang,,0914844287,"Làng nghề truyền thống, Danh thắng thiên nhiên, Sinh thái nông nghiệp",2023-06-21,kich_hoat
+ND0110,Nguyễn Thu Chi,nguyen.thu.chi110,nd0110@example.test,khach_hang,,0959362449,Đô thị – mua sắm,2025-02-16,kich_hoat

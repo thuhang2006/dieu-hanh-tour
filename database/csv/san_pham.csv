@@ -1,0 +1,141 @@
+ma_san_pham,ten_san_pham,duong_dan_tinh,ma_ncc,ma_diem_den,loai_san_pham,gia_co_ban,don_vi_tinh,so_ngay,suc_chua_toi_da,chinh_sach_huy,diem_danh_gia_tb,so_luot_danh_gia,trang_thai,ngay_tao
+SP0001,Vé tham quan Đền Thanh Bình – Hà Nội,ve-tham-quan-den-thanh-binh-ha-noi,NCC012,DD021,Vé tham quan,50000,khách,1,200,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-08-31
+SP0002,Lưu trú Bãi biển Đại Lộc – Đắk Lắk,luu-tru-bai-bien-dai-loc-dak-lak,NCC016,DD054,Lưu trú,2200000,phòng/đêm,1,6,Phí 30% trong 48 giờ,5.0,1,dang_ban,2024-09-11
+SP0003,Dịch vụ trải nghiệm Đảo Hương Giang – Hòa Bình,dich-vu-trai-nghiem-dao-huong-giang-hoa-binh,NCC016,DD008,Dịch vụ trải nghiệm,180000,khách,1,20,Miễn phí trước 3 ngày,4.0,1,dang_ban,2024-05-06
+SP0004,Vé tham quan Làng lụa Thanh Bình – Kiên Giang,ve-tham-quan-lang-lua-thanh-binh-kien-giang,NCC016,DD071,Vé tham quan,50000,khách,1,100,Không hoàn sau khi xác nhận,4.0,1,dang_ban,2024-11-26
+SP0005,Lưu trú Bán đảo Thanh Bình – Bắc Ninh,luu-tru-ban-dao-thanh-binh-bac-ninh,NCC021,DD030,Lưu trú,1450000,phòng/đêm,1,6,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-10-21
+SP0006,Lưu trú Miệt vườn Tây Hồ – Tuyên Quang,luu-tru-miet-vuon-tay-ho-tuyen-quang,NCC018,DD020,Lưu trú,450000,phòng/đêm,1,2,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-04-02
+SP0007,Tour trọn gói Rừng nguyên sinh Long Hải – Cao Bằng,tour-tron-goi-rung-nguyen-sinh-long-hai-cao-bang,NCC009,DD014,Tour trọn gói,2450000,khách,3,20,Không hoàn sau khi xác nhận,0.0,0,ngung_ban,2024-07-16
+SP0008,Tour trọn gói Thác Tây Hồ – Khánh Hòa,tour-tron-goi-thac-tay-ho-khanh-hoa,NCC010,DD045,Tour trọn gói,2450000,khách,4,25,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-10-04
+SP0009,Vận chuyển Bán đảo Long Hải – Hải Phòng,van-chuyen-ban-dao-long-hai-hai-phong,NCC013,DD025,Vận chuyển,480000,khách,1,29,Miễn phí trước 7 ngày,3.0,1,dang_ban,2025-05-05
+SP0010,Dịch vụ trải nghiệm Khu di sản Hòa Xuân – Hà Tĩnh,dich-vu-trai-nghiem-khu-di-san-hoa-xuan-ha-tinh,NCC023,DD040,Dịch vụ trải nghiệm,850000,khách,1,20,Phí 30% trong 48 giờ,5.0,1,dang_ban,2024-10-11
+SP0011,Lưu trú Thác Đại Lộc – Hà Giang,luu-tru-thac-dai-loc-ha-giang,NCC021,DD011,Lưu trú,1450000,phòng/đêm,1,6,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-07-23
+SP0012,Vé tham quan Chợ đêm Ngọc Trai – Nghệ An,ve-tham-quan-cho-dem-ngoc-trai-nghe-an,NCC007,DD033,Vé tham quan,90000,khách,1,100,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-10-29
+SP0013,Vé tham quan Bán đảo Thanh Bình – Bắc Ninh,ve-tham-quan-ban-dao-thanh-binh-bac-ninh,NCC013,DD030,Vé tham quan,90000,khách,1,100,Miễn phí trước 3 ngày,4.0,1,dang_ban,2024-05-21
+SP0014,Vé tham quan Thác Ngọc Trai – TP. Hồ Chí Minh,ve-tham-quan-thac-ngoc-trai-tp-ho-chi-minh,NCC023,DD059,Vé tham quan,50000,khách,1,400,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-06-09
+SP0015,Dịch vụ trải nghiệm Bãi biển Ngọc Trai – Sơn La,dich-vu-trai-nghiem-bai-bien-ngoc-trai-son-la,NCC019,DD004,Dịch vụ trải nghiệm,180000,khách,1,10,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-06-10
+SP0016,Dịch vụ trải nghiệm Đền Thiên Hương – Điện Biên,dich-vu-trai-nghiem-den-thien-huong-dien-bien,NCC013,DD005,Dịch vụ trải nghiệm,850000,khách,1,20,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2025-03-07
+SP0017,Vận chuyển Quần thể di sản Hòa Xuân – Tây Ninh,van-chuyen-quan-the-di-san-hoa-xuan-tay-ninh,NCC019,DD065,Vận chuyển,750000,khách,1,16,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-06-23
+SP0018,Vé tham quan Địa đạo Đại Lộc – Ninh Bình,ve-tham-quan-dia-dao-dai-loc-ninh-binh,NCC023,DD024,Vé tham quan,90000,khách,1,200,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-06-13
+SP0019,Dịch vụ trải nghiệm Miệt vườn Phú Cường – Cao Bằng,dich-vu-trai-nghiem-miet-vuon-phu-cuong-cao-bang,NCC001,DD013,Dịch vụ trải nghiệm,180000,khách,1,8,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2025-01-20
+SP0020,Dịch vụ trải nghiệm Đồi chè Hương Giang – Ninh Thuận,dich-vu-trai-nghiem-doi-che-huong-giang-ninh-thuan,NCC016,DD050,Dịch vụ trải nghiệm,850000,khách,1,10,Miễn phí trước 7 ngày,3.0,1,dang_ban,2025-06-10
+SP0021,Vé tham quan Quần thể di sản Hòa Xuân – Tây Ninh,ve-tham-quan-quan-the-di-san-hoa-xuan-tay-ninh,NCC015,DD065,Vé tham quan,250000,khách,1,400,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-03-06
+SP0022,Vận chuyển Miệt vườn Tây Hồ – Tuyên Quang,van-chuyen-miet-vuon-tay-ho-tuyen-quang,NCC022,DD020,Vận chuyển,120000,khách,1,29,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-04-29
+SP0023,Dịch vụ trải nghiệm Quảng trường Ngọc Trai – Cần Thơ,dich-vu-trai-nghiem-quang-truong-ngoc-trai-can-tho,NCC004,DD067,Dịch vụ trải nghiệm,850000,khách,1,15,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-08-21
+SP0024,Dịch vụ trải nghiệm Đồi chè Ban Mai – Quảng Bình,dich-vu-trai-nghiem-doi-che-ban-mai-quang-binh,NCC004,DD035,Dịch vụ trải nghiệm,180000,khách,1,10,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2025-08-10
+SP0025,Lưu trú Thác Đại Lộc – Hà Giang,luu-tru-thac-dai-loc-ha-giang,NCC004,DD011,Lưu trú,980000,phòng/đêm,1,6,Miễn phí trước 3 ngày,4.0,2,dang_ban,2025-05-10
+SP0026,Vận chuyển Đồi chè Hòa Xuân – Sơn La,van-chuyen-doi-che-hoa-xuan-son-la,NCC007,DD003,Vận chuyển,120000,khách,1,29,Miễn phí trước 7 ngày,5.0,1,dang_ban,2023-08-10
+SP0027,Vé tham quan Thác Bình Minh – Ninh Thuận,ve-tham-quan-thac-binh-minh-ninh-thuan,NCC010,DD049,Vé tham quan,150000,khách,1,200,Miễn phí trước 3 ngày,0.0,0,dang_ban,2025-04-18
+SP0028,Vé tham quan Rừng nguyên sinh Long Hải – Cao Bằng,ve-tham-quan-rung-nguyen-sinh-long-hai-cao-bang,NCC017,DD014,Vé tham quan,90000,khách,1,200,Phí 30% trong 48 giờ,2.0,1,dang_ban,2024-10-17
+SP0029,Tour trọn gói Khu di sản Hòa Xuân – Hà Tĩnh,tour-tron-goi-khu-di-san-hoa-xuan-ha-tinh,NCC007,DD040,Tour trọn gói,6500000,khách,5,20,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-07-28
+SP0030,Lưu trú Cánh đồng Ngọc Trai – Yên Bái,luu-tru-canh-dong-ngoc-trai-yen-bai,NCC019,DD009,Lưu trú,1450000,phòng/đêm,1,2,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-05-13
+SP0031,Vé tham quan Làng gốm Tây Hồ – Lào Cai,ve-tham-quan-lang-gom-tay-ho-lao-cai,NCC006,DD001,Vé tham quan,50000,khách,1,100,Phí 30% trong 48 giờ,0.0,0,dang_ban,2024-02-25
+SP0032,Tour trọn gói Cánh đồng Ngọc Trai – Yên Bái,tour-tron-goi-canh-dong-ngoc-trai-yen-bai,NCC011,DD009,Tour trọn gói,2450000,khách,3,16,Không hoàn sau khi xác nhận,4.0,1,dang_ban,2025-04-16
+SP0033,Vận chuyển Vườn quốc gia Hương Giang – Đà Nẵng,van-chuyen-vuon-quoc-gia-huong-giang-da-nang,NCC001,DD041,Vận chuyển,260000,khách,1,16,Miễn phí trước 7 ngày,0.0,0,dang_ban,2023-08-12
+SP0034,Dịch vụ trải nghiệm Địa đạo Đại Lộc – Ninh Bình,dich-vu-trai-nghiem-dia-dao-dai-loc-ninh-binh,NCC003,DD024,Dịch vụ trải nghiệm,350000,khách,1,15,Miễn phí trước 3 ngày,5.0,1,dang_ban,2025-11-10
+SP0035,Vận chuyển Khu di sản Mỹ Cảnh – Hà Nội,van-chuyen-khu-di-san-my-canh-ha-noi,NCC022,DD022,Vận chuyển,260000,khách,1,16,Không hoàn sau khi xác nhận,4.0,1,dang_ban,2024-12-22
+SP0036,Tour trọn gói Chợ đêm Hòa Xuân – Bình Định,tour-tron-goi-cho-dem-hoa-xuan-binh-dinh,NCC003,DD048,Tour trọn gói,3200000,khách,5,25,Không hoàn sau khi xác nhận,4.67,3,dang_ban,2023-09-25
+SP0037,Dịch vụ trải nghiệm Bãi biển Hương Giang – Đắk Lắk,dich-vu-trai-nghiem-bai-bien-huong-giang-dak-lak,NCC022,DD053,Dịch vụ trải nghiệm,520000,khách,1,10,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-09-16
+SP0038,Dịch vụ trải nghiệm Chợ đêm Ngọc Trai – Nghệ An,dich-vu-trai-nghiem-cho-dem-ngoc-trai-nghe-an,NCC018,DD033,Dịch vụ trải nghiệm,850000,khách,1,15,Phí 30% trong 48 giờ,0.0,0,dang_ban,2023-07-22
+SP0039,Dịch vụ trải nghiệm Đồi chè Phú Cường – Quảng Nam,dich-vu-trai-nghiem-doi-che-phu-cuong-quang-nam,NCC006,DD043,Dịch vụ trải nghiệm,350000,khách,1,8,Miễn phí trước 7 ngày,2.0,1,dang_ban,2025-04-11
+SP0040,Vé tham quan Đồi chè Thanh Bình – Kon Tum,ve-tham-quan-doi-che-thanh-binh-kon-tum,NCC022,DD057,Vé tham quan,150000,khách,1,400,Phí 30% trong 48 giờ,0.0,0,dang_ban,2024-12-22
+SP0041,Dịch vụ trải nghiệm Làng mây tre An Khê – Cà Mau,dich-vu-trai-nghiem-lang-may-tre-an-khe-ca-mau,NCC010,DD074,Dịch vụ trải nghiệm,180000,khách,1,8,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-08-21
+SP0042,Dịch vụ trải nghiệm Thác Đại Lộc – Hà Giang,dich-vu-trai-nghiem-thac-dai-loc-ha-giang,NCC008,DD011,Dịch vụ trải nghiệm,850000,khách,1,10,Phí 30% trong 48 giờ,3.0,1,dang_ban,2024-05-10
+SP0043,Lưu trú Quần thể di sản Hòa Xuân – Tây Ninh,luu-tru-quan-the-di-san-hoa-xuan-tay-ninh,NCC016,DD065,Lưu trú,980000,phòng/đêm,1,6,Phí 30% trong 48 giờ,3.0,1,dang_ban,2024-08-08
+SP0044,Lưu trú Khu di sản Mỹ Cảnh – Hà Nội,luu-tru-khu-di-san-my-canh-ha-noi,NCC010,DD022,Lưu trú,690000,phòng/đêm,1,4,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-02-25
+SP0045,Lưu trú Đỉnh núi Mỹ Cảnh – Bắc Ninh,luu-tru-dinh-nui-my-canh-bac-ninh,NCC015,DD029,Lưu trú,1450000,phòng/đêm,1,2,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-07-31
+SP0046,Vé tham quan Bán đảo Long Hải – Hải Phòng,ve-tham-quan-ban-dao-long-hai-hai-phong,NCC022,DD025,Vé tham quan,50000,khách,1,400,Miễn phí trước 7 ngày,5.0,1,dang_ban,2025-01-10
+SP0047,Dịch vụ trải nghiệm Miệt vườn Tây Hồ – Tuyên Quang,dich-vu-trai-nghiem-miet-vuon-tay-ho-tuyen-quang,NCC024,DD020,Dịch vụ trải nghiệm,180000,khách,1,8,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-04-07
+SP0048,Lưu trú Rừng nguyên sinh Ban Mai – Hà Giang,luu-tru-rung-nguyen-sinh-ban-mai-ha-giang,NCC008,DD012,Lưu trú,2200000,phòng/đêm,1,6,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-11-28
+SP0049,Dịch vụ trải nghiệm Quần thể di sản Hòa Xuân – Tây Ninh,dich-vu-trai-nghiem-quan-the-di-san-hoa-xuan-tay-ninh,NCC018,DD065,Dịch vụ trải nghiệm,180000,khách,1,20,Miễn phí trước 3 ngày,4.0,2,dang_ban,2024-11-05
+SP0050,Dịch vụ trải nghiệm Thành cổ Phú Cường – Quảng Ninh,dich-vu-trai-nghiem-thanh-co-phu-cuong-quang-ninh,NCC008,DD015,Dịch vụ trải nghiệm,180000,khách,1,8,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-06-22
+SP0051,Dịch vụ trải nghiệm Chùa Thiên Hương – An Giang,dich-vu-trai-nghiem-chua-thien-huong-an-giang,NCC008,DD069,Dịch vụ trải nghiệm,180000,khách,1,8,Miễn phí trước 7 ngày,3.5,2,dang_ban,2025-12-01
+SP0052,Lưu trú Thác Tây Hồ – Khánh Hòa,luu-tru-thac-tay-ho-khanh-hoa,NCC022,DD045,Lưu trú,450000,phòng/đêm,1,4,Phí 30% trong 48 giờ,3.0,1,dang_ban,2025-09-08
+SP0053,Dịch vụ trải nghiệm Cánh đồng Thiên Hương – Điện Biên,dich-vu-trai-nghiem-canh-dong-thien-huong-dien-bien,NCC012,DD006,Dịch vụ trải nghiệm,180000,khách,1,20,Miễn phí trước 3 ngày,0.0,0,dang_ban,2025-09-05
+SP0054,Lưu trú Miệt vườn Tây Hồ – Tuyên Quang,luu-tru-miet-vuon-tay-ho-tuyen-quang,NCC013,DD020,Lưu trú,980000,phòng/đêm,1,6,Miễn phí trước 3 ngày,0.0,0,dang_ban,2024-01-07
+SP0055,Tour trọn gói Khu trung tâm Phú Cường – Kiên Giang,tour-tron-goi-khu-trung-tam-phu-cuong-kien-giang,NCC023,DD072,Tour trọn gói,1890000,khách,4,20,Phí 30% trong 48 giờ,4.0,1,dang_ban,2025-04-30
+SP0056,Lưu trú Bán đảo Hương Giang – Bình Định,luu-tru-ban-dao-huong-giang-binh-dinh,NCC018,DD047,Lưu trú,450000,phòng/đêm,1,4,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2025-02-28
+SP0057,Dịch vụ trải nghiệm Phố đi bộ Thiên Hương – Cần Thơ,dich-vu-trai-nghiem-pho-di-bo-thien-huong-can-tho,NCC018,DD068,Dịch vụ trải nghiệm,350000,khách,1,15,Phí 30% trong 48 giờ,0.0,0,dang_ban,2024-07-04
+SP0058,Tour trọn gói Làng mây tre An Khê – Cà Mau,tour-tron-goi-lang-may-tre-an-khe-ca-mau,NCC011,DD074,Tour trọn gói,6500000,khách,2,16,Không hoàn sau khi xác nhận,5.0,1,dang_ban,2023-07-27
+SP0059,Lưu trú Làng mây tre Mỹ Cảnh – Hà Tĩnh,luu-tru-lang-may-tre-my-canh-ha-tinh,NCC019,DD039,Lưu trú,980000,phòng/đêm,1,6,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-12-23
+SP0060,Dịch vụ trải nghiệm Khu bảo tồn Phú Cường – Lâm Đồng,dich-vu-trai-nghiem-khu-bao-ton-phu-cuong-lam-dong,NCC023,DD052,Dịch vụ trải nghiệm,520000,khách,1,10,Không hoàn sau khi xác nhận,3.0,1,dang_ban,2025-10-12
+SP0061,Vé tham quan Thác Bình Minh – Ninh Thuận,ve-tham-quan-thac-binh-minh-ninh-thuan,NCC016,DD049,Vé tham quan,50000,khách,1,100,Miễn phí trước 3 ngày,5.0,1,dang_ban,2023-11-24
+SP0062,Lưu trú Thành cổ Tây Hồ – Yên Bái,luu-tru-thanh-co-tay-ho-yen-bai,NCC008,DD010,Lưu trú,2200000,phòng/đêm,1,2,Không hoàn sau khi xác nhận,3.67,3,dang_ban,2023-08-22
+SP0063,Vé tham quan Bãi biển Hương Giang – Đắk Lắk,ve-tham-quan-bai-bien-huong-giang-dak-lak,NCC018,DD053,Vé tham quan,250000,khách,1,200,Phí 30% trong 48 giờ,0.0,0,dang_ban,2023-10-12
+SP0064,Lưu trú Rừng nguyên sinh Ban Mai – Hà Giang,luu-tru-rung-nguyen-sinh-ban-mai-ha-giang,NCC015,DD012,Lưu trú,450000,phòng/đêm,1,4,Miễn phí trước 3 ngày,3.0,1,dang_ban,2024-07-17
+SP0065,Vé tham quan Rừng nguyên sinh Hòa Xuân – Kon Tum,ve-tham-quan-rung-nguyen-sinh-hoa-xuan-kon-tum,NCC014,DD058,Vé tham quan,150000,khách,1,100,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2023-11-02
+SP0066,Vận chuyển Làng lụa An Khê – Bến Tre,van-chuyen-lang-lua-an-khe-ben-tre,NCC010,DD075,Vận chuyển,480000,khách,1,16,Miễn phí trước 3 ngày,5.0,1,dang_ban,2024-07-29
+SP0067,Vé tham quan Khu bảo tồn Phú Cường – Lâm Đồng,ve-tham-quan-khu-bao-ton-phu-cuong-lam-dong,NCC007,DD052,Vé tham quan,50000,khách,1,100,Miễn phí trước 3 ngày,5.0,1,dang_ban,2024-05-13
+SP0068,Tour trọn gói Đồi chè Hòa Xuân – Sơn La,tour-tron-goi-doi-che-hoa-xuan-son-la,NCC014,DD003,Tour trọn gói,1890000,khách,5,12,Phí 30% trong 48 giờ,4.0,1,dang_ban,2025-06-17
+SP0069,Vận chuyển Phố cổ Thiên Hương – Bà Rịa – Vũng Tàu,van-chuyen-pho-co-thien-huong-ba-ria-vung-tau,NCC021,DD062,Vận chuyển,120000,khách,1,16,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-05-04
+SP0070,Vé tham quan Đền Thanh Bình – Hà Nội,ve-tham-quan-den-thanh-binh-ha-noi,NCC021,DD021,Vé tham quan,150000,khách,1,400,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-12-23
+SP0071,Lưu trú Thác Đại Lộc – Hà Giang,luu-tru-thac-dai-loc-ha-giang,NCC001,DD011,Lưu trú,980000,phòng/đêm,1,4,Miễn phí trước 3 ngày,4.0,1,dang_ban,2025-06-15
+SP0072,Vận chuyển Quần thể di sản Hương Giang – Đà Nẵng,van-chuyen-quan-the-di-san-huong-giang-da-nang,NCC018,DD042,Vận chuyển,120000,khách,1,16,Không hoàn sau khi xác nhận,5.0,1,dang_ban,2024-09-15
+SP0073,Lưu trú Làng mây tre Mỹ Cảnh – Hà Tĩnh,luu-tru-lang-may-tre-my-canh-ha-tinh,NCC011,DD039,Lưu trú,1450000,phòng/đêm,1,2,Phí 30% trong 48 giờ,3.5,2,dang_ban,2025-09-25
+SP0074,Tour trọn gói Rừng nguyên sinh Long Hải – Cao Bằng,tour-tron-goi-rung-nguyen-sinh-long-hai-cao-bang,NCC012,DD014,Tour trọn gói,3200000,khách,4,25,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-11-11
+SP0075,Dịch vụ trải nghiệm Làng mây tre Phú Cường – Bà Rịa – Vũng Tàu,dich-vu-trai-nghiem-lang-may-tre-phu-cuong-ba-ria-vung-tau,NCC024,DD061,Dịch vụ trải nghiệm,350000,khách,1,10,Không hoàn sau khi xác nhận,3.0,1,dang_ban,2025-09-22
+SP0076,Lưu trú Đảo Hương Giang – Hòa Bình,luu-tru-dao-huong-giang-hoa-binh,NCC013,DD008,Lưu trú,980000,phòng/đêm,1,2,Không hoàn sau khi xác nhận,4.0,1,dang_ban,2023-08-17
+SP0077,Dịch vụ trải nghiệm Đảo Mỹ Cảnh – Thanh Hóa,dich-vu-trai-nghiem-dao-my-canh-thanh-hoa,NCC008,DD031,Dịch vụ trải nghiệm,180000,khách,1,15,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-09-16
+SP0078,Tour trọn gói Quần thể di sản Hòa Xuân – Tây Ninh,tour-tron-goi-quan-the-di-san-hoa-xuan-tay-ninh,NCC013,DD065,Tour trọn gói,2450000,khách,3,12,Phí 30% trong 48 giờ,5.0,1,dang_ban,2024-06-09
+SP0079,Tour trọn gói Thành cổ Tây Hồ – Yên Bái,tour-tron-goi-thanh-co-tay-ho-yen-bai,NCC008,DD010,Tour trọn gói,1290000,khách,5,16,Miễn phí trước 3 ngày,0.0,0,dang_ban,2024-11-21
+SP0080,Lưu trú Thác Bình Minh – Ninh Thuận,luu-tru-thac-binh-minh-ninh-thuan,NCC002,DD049,Lưu trú,450000,phòng/đêm,1,6,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-07-07
+SP0081,Vé tham quan Làng lụa Long Hải – TP. Hồ Chí Minh,ve-tham-quan-lang-lua-long-hai-tp-ho-chi-minh,NCC002,DD060,Vé tham quan,150000,khách,1,200,Phí 30% trong 48 giờ,0.0,0,dang_ban,2024-04-26
+SP0082,Dịch vụ trải nghiệm Làng mây tre Mỹ Cảnh – Hà Tĩnh,dich-vu-trai-nghiem-lang-may-tre-my-canh-ha-tinh,NCC017,DD039,Dịch vụ trải nghiệm,350000,khách,1,10,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-04-25
+SP0083,Lưu trú Đồi chè Phú Cường – Quảng Nam,luu-tru-doi-che-phu-cuong-quang-nam,NCC024,DD043,Lưu trú,450000,phòng/đêm,1,4,Phí 30% trong 48 giờ,5.0,2,dang_ban,2023-11-13
+SP0084,Tour trọn gói Khu di sản Mỹ Cảnh – Hà Nội,tour-tron-goi-khu-di-san-my-canh-ha-noi,NCC021,DD022,Tour trọn gói,1290000,khách,2,20,Phí 30% trong 48 giờ,0.0,0,dang_ban,2023-12-01
+SP0085,Vận chuyển Khu bảo tồn Phú Cường – Lâm Đồng,van-chuyen-khu-bao-ton-phu-cuong-lam-dong,NCC001,DD052,Vận chuyển,260000,khách,1,45,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-11-24
+SP0086,Dịch vụ trải nghiệm Thác Đại Lộc – Hà Giang,dich-vu-trai-nghiem-thac-dai-loc-ha-giang,NCC003,DD011,Dịch vụ trải nghiệm,850000,khách,1,20,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-08-12
+SP0087,Lưu trú Cánh đồng Ngọc Trai – Yên Bái,luu-tru-canh-dong-ngoc-trai-yen-bai,NCC011,DD009,Lưu trú,450000,phòng/đêm,1,4,Phí 30% trong 48 giờ,5.0,2,dang_ban,2023-08-08
+SP0088,Lưu trú Địa đạo Đại Lộc – Cà Mau,luu-tru-dia-dao-dai-loc-ca-mau,NCC010,DD073,Lưu trú,980000,phòng/đêm,1,2,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-04-11
+SP0089,Vận chuyển Làng lụa Thanh Bình – Kiên Giang,van-chuyen-lang-lua-thanh-binh-kien-giang,NCC004,DD071,Vận chuyển,750000,khách,1,16,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-06-19
+SP0090,Dịch vụ trải nghiệm Chùa Hương Giang – Tuyên Quang,dich-vu-trai-nghiem-chua-huong-giang-tuyen-quang,NCC001,DD019,Dịch vụ trải nghiệm,350000,khách,1,15,Không hoàn sau khi xác nhận,5.0,1,dang_ban,2025-01-07
+SP0091,Dịch vụ trải nghiệm Khu di sản Mỹ Cảnh – Đồng Nai,dich-vu-trai-nghiem-khu-di-san-my-canh-dong-nai,NCC002,DD064,Dịch vụ trải nghiệm,850000,khách,1,20,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-11-18
+SP0092,Dịch vụ trải nghiệm Thác Ngọc Trai – TP. Hồ Chí Minh,dich-vu-trai-nghiem-thac-ngoc-trai-tp-ho-chi-minh,NCC008,DD059,Dịch vụ trải nghiệm,180000,khách,1,8,Không hoàn sau khi xác nhận,4.0,1,dang_ban,2023-07-27
+SP0093,Dịch vụ trải nghiệm Khu trung tâm An Khê – Đồng Nai,dich-vu-trai-nghiem-khu-trung-tam-an-khe-dong-nai,NCC006,DD063,Dịch vụ trải nghiệm,180000,khách,1,15,Phí 30% trong 48 giờ,0.0,0,dang_ban,2024-03-21
+SP0094,Vận chuyển Thành cổ Tây Hồ – Yên Bái,van-chuyen-thanh-co-tay-ho-yen-bai,NCC002,DD010,Vận chuyển,750000,khách,1,45,Miễn phí trước 3 ngày,0.0,0,dang_ban,2024-07-07
+SP0095,Lưu trú Rừng nguyên sinh Hòa Xuân – Kon Tum,luu-tru-rung-nguyen-sinh-hoa-xuan-kon-tum,NCC019,DD058,Lưu trú,2200000,phòng/đêm,1,4,Miễn phí trước 7 ngày,5.0,2,dang_ban,2024-12-11
+SP0096,Vé tham quan Làng lụa Thanh Bình – Kiên Giang,ve-tham-quan-lang-lua-thanh-binh-kien-giang,NCC019,DD071,Vé tham quan,50000,khách,1,400,Không hoàn sau khi xác nhận,5.0,1,dang_ban,2024-07-02
+SP0097,Lưu trú Bán đảo Long Hải – Hải Phòng,luu-tru-ban-dao-long-hai-hai-phong,NCC016,DD025,Lưu trú,690000,phòng/đêm,1,4,Miễn phí trước 3 ngày,4.0,1,dang_ban,2024-12-01
+SP0098,Tour trọn gói Thung lũng Thanh Bình – Quảng Nam,tour-tron-goi-thung-lung-thanh-binh-quang-nam,NCC012,DD044,Tour trọn gói,3200000,khách,4,25,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-01-09
+SP0099,Vận chuyển Bán đảo Thanh Bình – Bắc Ninh,van-chuyen-ban-dao-thanh-binh-bac-ninh,NCC017,DD030,Vận chuyển,750000,khách,1,45,Không hoàn sau khi xác nhận,5.0,1,dang_ban,2024-12-03
+SP0100,Dịch vụ trải nghiệm Phố cổ Long Hải – Nam Định,dich-vu-trai-nghiem-pho-co-long-hai-nam-dinh,NCC010,DD027,Dịch vụ trải nghiệm,520000,khách,1,10,Miễn phí trước 3 ngày,0.0,0,dang_ban,2025-09-02
+SP0101,Dịch vụ trải nghiệm Khu bảo tồn Mỹ Cảnh – Huế,dich-vu-trai-nghiem-khu-bao-ton-my-canh-hue,NCC011,DD038,Dịch vụ trải nghiệm,180000,khách,1,8,Miễn phí trước 3 ngày,0.0,0,dang_ban,2024-01-11
+SP0102,Tour trọn gói Địa đạo Đại Lộc – Cà Mau,tour-tron-goi-dia-dao-dai-loc-ca-mau,NCC016,DD073,Tour trọn gói,3200000,khách,5,30,Phí 30% trong 48 giờ,0.0,0,dang_ban,2025-06-19
+SP0103,Lưu trú Khu trung tâm Phú Cường – Kiên Giang,luu-tru-khu-trung-tam-phu-cuong-kien-giang,NCC005,DD072,Lưu trú,450000,phòng/đêm,1,6,Phí 30% trong 48 giờ,2.0,1,dang_ban,2025-03-24
+SP0104,Vận chuyển Chùa Thiên Hương – An Giang,van-chuyen-chua-thien-huong-an-giang,NCC002,DD069,Vận chuyển,120000,khách,1,29,Không hoàn sau khi xác nhận,5.0,1,dang_ban,2023-11-01
+SP0105,Vé tham quan Khu tưởng niệm Ban Mai – Nghệ An,ve-tham-quan-khu-tuong-niem-ban-mai-nghe-an,NCC022,DD034,Vé tham quan,250000,khách,1,400,Miễn phí trước 7 ngày,0.0,0,dang_ban,2025-10-13
+SP0106,Lưu trú Khu bảo tồn Phú Cường – Lâm Đồng,luu-tru-khu-bao-ton-phu-cuong-lam-dong,NCC012,DD052,Lưu trú,980000,phòng/đêm,1,2,Miễn phí trước 3 ngày,5.0,1,dang_ban,2025-05-18
+SP0107,Vé tham quan Thung lũng Thanh Bình – Quảng Nam,ve-tham-quan-thung-lung-thanh-binh-quang-nam,NCC001,DD044,Vé tham quan,250000,khách,1,100,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2025-07-18
+SP0108,Vận chuyển Rừng nguyên sinh Long Hải – Cao Bằng,van-chuyen-rung-nguyen-sinh-long-hai-cao-bang,NCC021,DD014,Vận chuyển,480000,khách,1,29,Miễn phí trước 7 ngày,5.0,1,dang_ban,2025-02-03
+SP0109,Lưu trú Đảo Thanh Bình – Lạng Sơn,luu-tru-dao-thanh-binh-lang-son,NCC003,DD017,Lưu trú,2200000,phòng/đêm,1,2,Miễn phí trước 7 ngày,3.5,2,dang_ban,2025-02-06
+SP0110,Vé tham quan Địa đạo Đại Lộc – Ninh Bình,ve-tham-quan-dia-dao-dai-loc-ninh-binh,NCC007,DD024,Vé tham quan,90000,khách,1,400,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-07-31
+SP0111,Dịch vụ trải nghiệm Khu bảo tồn Mỹ Cảnh – Huế,dich-vu-trai-nghiem-khu-bao-ton-my-canh-hue,NCC008,DD038,Dịch vụ trải nghiệm,350000,khách,1,8,Miễn phí trước 7 ngày,1.0,1,dang_ban,2025-04-06
+SP0112,Vận chuyển Đảo Thanh Bình – Lạng Sơn,van-chuyen-dao-thanh-binh-lang-son,NCC008,DD017,Vận chuyển,750000,khách,1,16,Miễn phí trước 7 ngày,0.0,0,dang_ban,2023-08-24
+SP0113,Vận chuyển Bãi biển Ngọc Trai – Sơn La,van-chuyen-bai-bien-ngoc-trai-son-la,NCC013,DD004,Vận chuyển,260000,khách,1,29,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-10-17
+SP0114,Vận chuyển Đồi chè Hòa Xuân – Huế,van-chuyen-doi-che-hoa-xuan-hue,NCC002,DD037,Vận chuyển,260000,khách,1,45,Miễn phí trước 3 ngày,4.0,1,dang_ban,2025-02-04
+SP0115,Vận chuyển Làng gốm Tây Hồ – Lào Cai,van-chuyen-lang-gom-tay-ho-lao-cai,NCC023,DD001,Vận chuyển,120000,khách,1,45,Miễn phí trước 3 ngày,0.0,0,dang_ban,2025-01-12
+SP0116,Lưu trú Đền An Khê – Quảng Bình,luu-tru-den-an-khe-quang-binh,NCC022,DD036,Lưu trú,2200000,phòng/đêm,1,6,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-12-27
+SP0117,Vận chuyển Địa đạo Đại Lộc – Cà Mau,van-chuyen-dia-dao-dai-loc-ca-mau,NCC004,DD073,Vận chuyển,120000,khách,1,29,Phí 30% trong 48 giờ,5.0,1,dang_ban,2024-05-27
+SP0118,Dịch vụ trải nghiệm Khu bảo tồn Mỹ Cảnh – Huế,dich-vu-trai-nghiem-khu-bao-ton-my-canh-hue,NCC010,DD038,Dịch vụ trải nghiệm,180000,khách,1,8,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-10-19
+SP0119,Vận chuyển Thành cổ Thiên Hương – Nam Định,van-chuyen-thanh-co-thien-huong-nam-dinh,NCC017,DD028,Vận chuyển,260000,khách,1,16,Miễn phí trước 3 ngày,0.0,0,ngung_ban,2024-05-01
+SP0120,Vé tham quan Chùa Hương Giang – Tuyên Quang,ve-tham-quan-chua-huong-giang-tuyen-quang,NCC005,DD019,Vé tham quan,50000,khách,1,100,Miễn phí trước 3 ngày,0.0,0,dang_ban,2025-04-29
+SP0121,Tour trọn gói Thác Ngọc Trai – TP. Hồ Chí Minh,tour-tron-goi-thac-ngoc-trai-tp-ho-chi-minh,NCC014,DD059,Tour trọn gói,3200000,khách,5,16,Phí 30% trong 48 giờ,4.0,1,dang_ban,2024-10-20
+SP0122,Dịch vụ trải nghiệm Khu tưởng niệm Ban Mai – Nghệ An,dich-vu-trai-nghiem-khu-tuong-niem-ban-mai-nghe-an,NCC020,DD034,Dịch vụ trải nghiệm,850000,khách,1,10,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2024-06-26
+SP0123,Tour trọn gói Đền Thiên Hương – Điện Biên,tour-tron-goi-den-thien-huong-dien-bien,NCC006,DD005,Tour trọn gói,1890000,khách,3,12,Không hoàn sau khi xác nhận,4.0,3,dang_ban,2024-06-30
+SP0124,Vé tham quan Đền Ban Mai – Hòa Bình,ve-tham-quan-den-ban-mai-hoa-binh,NCC002,DD007,Vé tham quan,50000,khách,1,400,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2023-07-24
+SP0125,Dịch vụ trải nghiệm Đồi chè Thiên Hương – Lào Cai,dich-vu-trai-nghiem-doi-che-thien-huong-lao-cai,NCC014,DD002,Dịch vụ trải nghiệm,850000,khách,1,15,Phí 30% trong 48 giờ,5.0,1,dang_ban,2023-09-07
+SP0126,Tour trọn gói Đảo Thanh Bình – Lạng Sơn,tour-tron-goi-dao-thanh-binh-lang-son,NCC021,DD017,Tour trọn gói,6500000,khách,3,25,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2023-10-12
+SP0127,Vé tham quan Đồi chè Ban Mai – Quảng Bình,ve-tham-quan-doi-che-ban-mai-quang-binh,NCC002,DD035,Vé tham quan,150000,khách,1,200,Miễn phí trước 3 ngày,0.0,0,dang_ban,2025-01-13
+SP0128,Dịch vụ trải nghiệm Khu di sản Mỹ Cảnh – Hà Nội,dich-vu-trai-nghiem-khu-di-san-my-canh-ha-noi,NCC003,DD022,Dịch vụ trải nghiệm,520000,khách,1,8,Miễn phí trước 7 ngày,3.5,2,dang_ban,2025-10-13
+SP0129,Vé tham quan Vịnh Ngọc Trai – Lạng Sơn,ve-tham-quan-vinh-ngoc-trai-lang-son,NCC015,DD018,Vé tham quan,50000,khách,1,100,Miễn phí trước 7 ngày,0.0,0,dang_ban,2023-07-30
+SP0130,Tour trọn gói Thác Đại Lộc – Hà Giang,tour-tron-goi-thac-dai-loc-ha-giang,NCC004,DD011,Tour trọn gói,6500000,khách,3,30,Miễn phí trước 3 ngày,0.0,0,dang_ban,2025-11-30
+SP0131,Dịch vụ trải nghiệm Đồi chè Phú Cường – Quảng Nam,dich-vu-trai-nghiem-doi-che-phu-cuong-quang-nam,NCC016,DD043,Dịch vụ trải nghiệm,850000,khách,1,10,Miễn phí trước 7 ngày,5.0,1,dang_ban,2025-10-05
+SP0132,Vận chuyển Hang động Hòa Xuân – Tây Ninh,van-chuyen-hang-dong-hoa-xuan-tay-ninh,NCC021,DD066,Vận chuyển,260000,khách,1,29,Miễn phí trước 7 ngày,0.0,0,dang_ban,2024-12-28
+SP0133,Vận chuyển Làng gốm Tây Hồ – Lào Cai,van-chuyen-lang-gom-tay-ho-lao-cai,NCC021,DD001,Vận chuyển,480000,khách,1,45,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2023-09-04
+SP0134,Vận chuyển Bãi biển Hương Giang – Đắk Lắk,van-chuyen-bai-bien-huong-giang-dak-lak,NCC021,DD053,Vận chuyển,750000,khách,1,29,Không hoàn sau khi xác nhận,0.0,0,dang_ban,2025-05-19
+SP0135,Dịch vụ trải nghiệm Chợ đêm Ngọc Trai – Nghệ An,dich-vu-trai-nghiem-cho-dem-ngoc-trai-nghe-an,NCC001,DD033,Dịch vụ trải nghiệm,520000,khách,1,20,Phí 30% trong 48 giờ,0.0,0,ngung_ban,2025-03-25
+SP0136,Lưu trú Đảo Hương Giang – Hòa Bình,luu-tru-dao-huong-giang-hoa-binh,NCC020,DD008,Lưu trú,980000,phòng/đêm,1,6,Không hoàn sau khi xác nhận,3.0,1,dang_ban,2023-12-18
+SP0137,Dịch vụ trải nghiệm Đảo Thanh Bình – Lạng Sơn,dich-vu-trai-nghiem-dao-thanh-binh-lang-son,NCC019,DD017,Dịch vụ trải nghiệm,180000,khách,1,10,Miễn phí trước 3 ngày,5.0,1,dang_ban,2025-01-29
+SP0138,Vé tham quan Vịnh Ngọc Trai – Lạng Sơn,ve-tham-quan-vinh-ngoc-trai-lang-son,NCC013,DD018,Vé tham quan,50000,khách,1,200,Miễn phí trước 3 ngày,0.0,0,dang_ban,2023-11-24
+SP0139,Tour trọn gói Bán đảo Hương Giang – Bình Định,tour-tron-goi-ban-dao-huong-giang-binh-dinh,NCC008,DD047,Tour trọn gói,6500000,khách,3,25,Phí 30% trong 48 giờ,0.0,0,ngung_ban,2023-10-10
+SP0140,Tour trọn gói Thành cổ Phú Cường – Quảng Ninh,tour-tron-goi-thanh-co-phu-cuong-quang-ninh,NCC004,DD015,Tour trọn gói,6500000,khách,4,25,Phí 30% trong 48 giờ,5.0,1,dang_ban,2025-08-09

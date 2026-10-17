@@ -1,0 +1,89 @@
+ma_danh_gia,ma_san_pham,ma_don,ma_nguoi_dung,diem,noi_dung,ngay_danh_gia,trang_thai_kiem_duyet
+DG00001,SP0089,DH00004,ND0107,3,Lịch trình hơi gấp nhưng chấp nhận được.,2026-01-06,cho_duyet
+DG00002,SP0013,DH00008,ND0076,4,"Cảnh đẹp, tổ chức đúng giờ.",2025-11-25,da_duyet
+DG00003,SP0076,DH00008,ND0076,4,Dịch vụ tốt so với mức giá.,2025-11-10,da_duyet
+DG00004,SP0003,DH00008,ND0076,4,"Cảnh đẹp, tổ chức đúng giờ.",2025-11-29,cho_duyet
+DG00005,SP0104,DH00010,ND0099,5,"Trải nghiệm đáng nhớ, sẽ quay lại.",2026-01-12,da_duyet
+DG00006,SP0010,DH00011,ND0037,5,"Phòng sạch, nhân viên thân thiện.",2025-10-26,da_duyet
+DG00007,SP0028,DH00020,ND0086,2,Giá cao so với chất lượng nhận được.,2025-11-13,da_duyet
+DG00008,SP0095,DH00021,ND0097,5,Dịch vụ tốt so với mức giá.,2025-12-12,da_duyet
+DG00009,SP0035,DH00024,ND0054,4,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-10-18,da_duyet
+DG00010,SP0039,DH00025,ND0101,3,"Ăn uống bình thường, chỗ nghỉ ổn.",2025-10-02,cho_duyet
+DG00011,SP0137,DH00031,ND0050,5,Dịch vụ tốt so với mức giá.,2025-10-17,da_duyet
+DG00012,SP0130,DH00043,ND0095,4,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2026-01-16,cho_duyet
+DG00013,SP0043,DH00043,ND0095,3,Cần cải thiện khâu đón khách.,2026-01-27,da_duyet
+DG00014,SP0075,DH00047,ND0089,3,Đông khách vào cuối tuần.,2025-12-10,da_duyet
+DG00015,SP0036,DH00047,ND0089,5,Dịch vụ tốt so với mức giá.,2025-12-13,da_duyet
+DG00016,SP0083,DH00051,ND0071,5,Dịch vụ tốt so với mức giá.,2025-11-10,cho_duyet
+DG00017,SP0087,DH00054,ND0089,5,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-10-10,da_duyet
+DG00018,SP0067,DH00054,ND0089,5,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-10-12,da_duyet
+DG00019,SP0114,DH00057,ND0065,4,"Phòng sạch, nhân viên thân thiện.",2025-09-22,da_duyet
+DG00020,SP0083,DH00057,ND0065,5,"Phòng sạch, nhân viên thân thiện.",2025-09-28,da_duyet
+DG00021,SP0066,DH00071,ND0080,5,"Phòng sạch, nhân viên thân thiện.",2025-10-16,da_duyet
+DG00022,SP0002,DH00074,ND0096,5,"Cảnh đẹp, tổ chức đúng giờ.",2025-11-23,da_duyet
+DG00023,SP0051,DH00078,ND0045,4,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-12-26,da_duyet
+DG00024,SP0072,DH00079,ND0084,3,Lịch trình hơi gấp nhưng chấp nhận được.,2026-01-05,cho_duyet
+DG00025,SP0103,DH00081,ND0076,2,Thông tin trên website chưa khớp thực tế.,2026-01-14,da_duyet
+DG00026,SP0059,DH00085,ND0097,3,Cần cải thiện khâu đón khách.,2025-11-16,tu_choi
+DG00027,SP0071,DH00087,ND0101,4,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-10-05,da_duyet
+DG00028,SP0062,DH00091,ND0059,4,"Cảnh đẹp, tổ chức đúng giờ.",2025-10-29,da_duyet
+DG00029,SP0055,DH00091,ND0059,4,"Cảnh đẹp, tổ chức đúng giờ.",2025-10-15,da_duyet
+DG00030,SP0020,DH00092,ND0053,3,Đông khách vào cuối tuần.,2025-10-23,da_duyet
+DG00031,SP0087,DH00094,ND0056,5,"Phòng sạch, nhân viên thân thiện.",2025-10-24,da_duyet
+DG00032,SP0049,DH00105,ND0053,4,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-11-16,da_duyet
+DG00033,SP0051,DH00110,ND0081,3,Lịch trình hơi gấp nhưng chấp nhận được.,2025-10-16,da_duyet
+DG00034,SP0046,DH00117,ND0052,5,Dịch vụ tốt so với mức giá.,2026-01-16,da_duyet
+DG00035,SP0060,DH00120,ND0077,3,Đông khách vào cuối tuần.,2025-12-19,da_duyet
+DG00036,SP0064,DH00122,ND0093,3,Lịch trình hơi gấp nhưng chấp nhận được.,2025-11-06,da_duyet
+DG00037,SP0090,DH00122,ND0093,5,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-11-02,da_duyet
+DG00038,SP0083,DH00124,ND0037,5,"Cảnh đẹp, tổ chức đúng giờ.",2026-01-01,da_duyet
+DG00039,SP0136,DH00125,ND0062,3,"Ăn uống bình thường, chỗ nghỉ ổn.",2025-12-09,da_duyet
+DG00040,SP0140,DH00127,ND0041,5,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-09-27,da_duyet
+DG00041,SP0106,DH00127,ND0041,5,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-10-04,da_duyet
+DG00042,SP0063,DH00130,ND0110,5,Dịch vụ tốt so với mức giá.,2025-10-26,cho_duyet
+DG00043,SP0058,DH00130,ND0110,5,Dịch vụ tốt so với mức giá.,2025-10-16,da_duyet
+DG00044,SP0131,DH00135,ND0089,5,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-10-29,da_duyet
+DG00045,SP0111,DH00135,ND0089,1,Giá cao so với chất lượng nhận được.,2025-10-26,da_duyet
+DG00046,SP0109,DH00138,ND0079,2,Chờ đợi lâu ở điểm tập trung.,2026-01-19,da_duyet
+DG00047,SP0095,DH00139,ND0070,5,Dịch vụ tốt so với mức giá.,2025-11-30,cho_duyet
+DG00048,SP0026,DH00139,ND0070,5,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-12-05,da_duyet
+DG00049,SP0108,DH00142,ND0101,5,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-09-18,da_duyet
+DG00050,SP0123,DH00144,ND0058,3,"Ăn uống bình thường, chỗ nghỉ ổn.",2025-10-04,da_duyet
+DG00051,SP0062,DH00144,ND0058,3,Cần cải thiện khâu đón khách.,2025-10-13,da_duyet
+DG00052,SP0039,DH00146,ND0074,2,Thông tin trên website chưa khớp thực tế.,2025-10-23,da_duyet
+DG00053,SP0090,DH00150,ND0098,3,Cần cải thiện khâu đón khách.,2025-12-23,cho_duyet
+DG00054,SP0073,DH00150,ND0098,3,Cần cải thiện khâu đón khách.,2025-12-14,da_duyet
+DG00055,SP0097,DH00150,ND0098,4,"Cảnh đẹp, tổ chức đúng giờ.",2025-12-28,da_duyet
+DG00056,SP0117,DH00165,ND0037,5,"Phòng sạch, nhân viên thân thiện.",2025-12-14,da_duyet
+DG00057,SP0099,DH00175,ND0080,5,Dịch vụ tốt so với mức giá.,2025-10-28,da_duyet
+DG00058,SP0123,DH00179,ND0052,5,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-12-30,da_duyet
+DG00059,SP0049,DH00181,ND0092,4,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-12-23,da_duyet
+DG00060,SP0109,DH00187,ND0103,5,"Cảnh đẹp, tổ chức đúng giờ.",2025-10-11,da_duyet
+DG00061,SP0003,DH00187,ND0103,4,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-10-22,da_duyet
+DG00062,SP0052,DH00188,ND0086,3,"Ăn uống bình thường, chỗ nghỉ ổn.",2026-01-19,da_duyet
+DG00063,SP0062,DH00188,ND0086,4,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-12-25,da_duyet
+DG00064,SP0073,DH00189,ND0089,4,"Cảnh đẹp, tổ chức đúng giờ.",2025-11-04,da_duyet
+DG00065,SP0036,DH00190,ND0069,4,Dịch vụ tốt so với mức giá.,2025-12-09,da_duyet
+DG00066,SP0123,DH00197,ND0052,4,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2026-01-22,tu_choi
+DG00067,SP0128,DH00197,ND0052,3,Lịch trình hơi gấp nhưng chấp nhận được.,2026-01-12,da_duyet
+DG00068,SP0050,DH00205,ND0085,3,Đông khách vào cuối tuần.,2025-11-13,tu_choi
+DG00069,SP0009,DH00207,ND0110,3,"Ăn uống bình thường, chỗ nghỉ ổn.",2026-01-14,da_duyet
+DG00070,SP0096,DH00211,ND0038,5,"Phòng sạch, nhân viên thân thiện.",2025-12-18,da_duyet
+DG00071,SP0125,DH00215,ND0060,5,Dịch vụ tốt so với mức giá.,2026-01-25,da_duyet
+DG00072,SP0123,DH00217,ND0097,4,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-11-03,da_duyet
+DG00073,SP0034,DH00217,ND0097,5,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-11-12,da_duyet
+DG00074,SP0042,DH00226,ND0072,3,Lịch trình hơi gấp nhưng chấp nhận được.,2025-12-17,da_duyet
+DG00075,SP0072,DH00226,ND0072,5,Dịch vụ tốt so với mức giá.,2025-12-23,da_duyet
+DG00076,SP0025,DH00230,ND0077,5,"Phòng sạch, nhân viên thân thiện.",2025-12-18,da_duyet
+DG00077,SP0015,DH00230,ND0077,2,Chờ đợi lâu ở điểm tập trung.,2025-12-12,cho_duyet
+DG00078,SP0036,DH00234,ND0109,5,"Phòng sạch, nhân viên thân thiện.",2025-12-17,da_duyet
+DG00079,SP0025,DH00240,ND0066,3,Lịch trình hơi gấp nhưng chấp nhận được.,2026-01-03,da_duyet
+DG00080,SP0078,DH00242,ND0051,5,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2026-01-06,da_duyet
+DG00081,SP0095,DH00246,ND0071,5,"Hướng dẫn viên nhiệt tình, lịch trình hợp lý.",2025-11-28,da_duyet
+DG00082,SP0004,DH00247,ND0072,4,"Phòng sạch, nhân viên thân thiện.",2025-11-03,da_duyet
+DG00083,SP0061,DH00247,ND0072,5,"Phòng sạch, nhân viên thân thiện.",2025-10-29,da_duyet
+DG00084,SP0068,DH00250,ND0069,4,"Trải nghiệm đáng nhớ, sẽ quay lại.",2025-11-22,da_duyet
+DG00085,SP0128,DH00253,ND0081,4,Dịch vụ tốt so với mức giá.,2025-11-29,da_duyet
+DG00086,SP0092,DH00257,ND0043,4,"Trải nghiệm đáng nhớ, sẽ quay lại.",2026-01-12,da_duyet
+DG00087,SP0121,DH00259,ND0060,4,Dịch vụ tốt so với mức giá.,2026-01-10,da_duyet
+DG00088,SP0032,DH00260,ND0087,4,"Phòng sạch, nhân viên thân thiện.",2025-09-15,da_duyet

@@ -1,0 +1,29 @@
+bang,truong,kieu_du_lieu,rang_buoc,y_nghia_nghiep_vu
+diem_den,ma_diem_den,CHAR(5),Khóa chính,"Mã định danh điểm đến, dạng DDnnn"
+diem_den,ten_diem_den,VARCHAR(150),NOT NULL,Tên hiển thị của điểm đến
+diem_den,duong_dan_tinh,VARCHAR(180),UNIQUE,Đường dẫn thân thiện dùng cho SEO
+diem_den,tinh_thanh,VARCHAR(60),"NOT NULL, INDEX",Tỉnh hoặc thành phố trực thuộc trung ương
+diem_den,vung_mien,VARCHAR(40),INDEX,"Vùng du lịch, dùng để nhóm và lọc"
+diem_den,loai_hinh,VARCHAR(60),INDEX,Phân loại điểm đến theo loại hình du lịch
+diem_den,vi_do / kinh_do,"DECIMAL(9,6)",NOT NULL,Tọa độ địa lý phục vụ bản đồ và tìm theo bán kính
+diem_den,mua_phu_hop,VARCHAR(30),,Mùa khuyến nghị tham quan
+diem_den,thoi_luong_tham_quan_gio,"DECIMAL(4,1)",,Thời lượng tham quan trung bình
+diem_den,suc_tai_ngay,INT,,"Sức tải tối đa mỗi ngày, dùng cho bài toán quản lý điểm đến"
+nha_cung_cap,ma_ncc,CHAR(6),Khóa chính,Mã nhà cung cấp dịch vụ
+san_pham,ma_san_pham,CHAR(6),Khóa chính,Mã sản phẩm du lịch
+san_pham,ma_ncc,CHAR(6),Khóa ngoại → nha_cung_cap,"Chủ sở hữu sản phẩm, dùng để phân quyền theo phạm vi"
+san_pham,ma_diem_den,CHAR(5),Khóa ngoại → diem_den,Điểm đến gắn với sản phẩm
+san_pham,gia_co_ban,INT,"NOT NULL, CHECK > 0","Giá gốc theo đơn vị đồng, chưa áp hệ số mùa"
+san_pham,suc_chua_toi_da,INT,NOT NULL,Số chỗ tối đa cho mỗi lượt khởi hành
+san_pham,diem_danh_gia_tb,"DECIMAL(3,2)",Trường dẫn xuất,Trung bình điểm đánh giá đã duyệt
+gia_theo_mua,he_so_gia,"DECIMAL(4,2)",NOT NULL,Hệ số nhân giá theo mùa vụ
+lich_kha_dung,ma_lich,CHAR(9),Khóa chính,Một suất khởi hành của một sản phẩm
+lich_kha_dung,con_lai,INT,CHECK >= 0,"Số chỗ còn bán, là trường trọng yếu khi xử lý đặt đồng thời"
+nguoi_dung,vai_tro,ENUM,"NOT NULL, INDEX","quan_tri, nha_cung_cap, khach_hang, huong_dan_vien, kiem_thu"
+don_dat,ma_don,CHAR(7),Khóa chính,Mã đơn đặt
+don_dat,trang_thai,ENUM,"NOT NULL, INDEX","cho_thanh_toan, da_thanh_toan, hoan_tat, da_huy, cho_hoan_tien"
+chi_tiet_don,ma_lich,CHAR(9),Khóa ngoại → lich_kha_dung,Suất khởi hành được đặt
+thanh_toan,ma_giao_dich_sandbox,VARCHAR(30),,"Mã giao dịch môi trường thử nghiệm, không phải giao dịch thật"
+danh_gia,trang_thai_kiem_duyet,ENUM,NOT NULL,"da_duyet, cho_duyet, tu_choi"
+bai_viet,the_gan,VARCHAR(200),,"Danh sách thẻ, phục vụ gợi ý nội dung liên quan"
+nhat_ky_he_thong,muc,ENUM,INDEX,"info, warning, error"

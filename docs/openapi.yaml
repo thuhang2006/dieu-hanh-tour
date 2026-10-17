@@ -1,0 +1,29 @@
+openapi: 3.0.3
+info:
+  title: API Du lich so CSE703073 Nhom 05
+  version: 1.0.0
+paths:
+  /api/v1/products:
+    get:
+      summary: Danh sach san pham co phan trang va bo loc
+      parameters:
+        - { name: province, in: query, schema: { type: string } }
+        - { name: type, in: query, schema: { type: string, enum: [tour, stay, ticket, experience, transfer] } }
+        - { name: price_min, in: query, schema: { type: number } }
+        - { name: page, in: query, schema: { type: integer, default: 1 } }
+      responses:
+        "200": { description: Thanh cong }
+        "422": { description: Tham so khong hop le }
+  /api/v1/products/{id}:
+    get:
+      summary: Chi tiet san pham va lich ton kha dung
+      responses:
+        "200": { description: Thanh cong }
+        "404": { description: Khong tim thay san pham }
+  /api/v1/bookings:
+    post:
+      summary: Dat giu cho co thoi han 15 phut
+      responses:
+        "201": { description: Giu cho thanh cong }
+        "400": { description: Het cho kha dung }
+        "401": { description: Can dang nhap }

@@ -1,0 +1,6 @@
+{
+  "name": "Du Lịch Số Việt Nam - Hệ Thống Điều Hành & Đặt Dịch Vụ Du Lịch Trực Tuyến",
+  "description": "Du Lịch Số Việt Nam - Hệ thống điều hành tour dành cho doanh nghiệp lữ hành và cổng đặt dịch vụ du lịch trực tuyến.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

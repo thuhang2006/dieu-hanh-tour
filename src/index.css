@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (.dark &, .dark&);
+
+/* CSS Design Tokens for Light / Dark Theme according to Handbook */
+:root {
+  font-family: 'Plus Jakarta Sans', 'Roboto', system-ui, -apple-system, sans-serif;
+  --bg-primary: #f8fafc;
+  --bg-card: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+}
+
+html.dark, body.dark, .dark {
+  color-scheme: dark;
+  --bg-primary: #020617;
+  --bg-card: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border-color: #1e293b;
+}
+
+body {
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

@@ -64,6 +64,14 @@ export const BookingModal: React.FC<BookingModalProps> = ({
       setErrorMessage(`Rất tiếc! Tour chỉ còn ${tour.remainingSeats} chỗ khả dụng. Vui lòng giảm số lượng khách.`);
       return;
     }
+
+    // Kiểm tra định dạng số điện thoại Việt Nam đơn giản
+    const phoneRegex = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
+    if (!phoneRegex.test(customerPhone)) {
+      setErrorMessage("Số điện thoại không hợp lệ! Vui lòng nhập đúng 10-11 chữ số bắt đầu bằng số 0.");
+      return;
+    }
+
     setErrorMessage(null);
     setStep('payment');
   };
@@ -287,132 +295,4 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             {/* Gateway UI preview */}
             {paymentGateway === 'sandbox' ? (
               <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 space-y-3 text-xs">
-                <div className="flex justify-between items-center text-slate-600 dark:text-slate-400">
-                  <span>Số tiền:</span>
-                  <strong className="text-slate-900 dark:text-white font-mono text-sm">{totalAmount.toLocaleString('vi-VN')} VNĐ</strong>
-                </div>
-                <div className="flex justify-between items-center text-slate-600 dark:text-slate-400">
-                  <span>Môi trường:</span>
-                  <span className="bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 px-2 py-0.5 rounded font-bold text-[10px]">
-                    Sandbox Test Mode
-                  </span>
-                </div>
-                <div className="p-2.5 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-700 text-[11px] text-slate-500 space-y-1">
-                  <div>• Thẻ thử nghiệm: <code>9704 0000 0000 0001 (NGUYEN THU HA)</code></div>
-                  <div>• Mã giao dịch tự động sinh: <code>SBX2026100709513783250B</code></div>
-                </div>
-              </div>
-            ) : (
-              <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 text-center space-y-2 text-xs">
-                <div className="w-36 h-36 mx-auto bg-white p-2 rounded-xl border border-slate-200 shadow-sm flex items-center justify-center">
-                  <div className="w-full h-full bg-slate-900 rounded-lg flex flex-col items-center justify-center text-white p-2">
-                    <QrCode className="w-16 h-16 text-cyan-400" />
-                    <span className="text-[9px] font-mono mt-1 text-slate-300">VIETQR NAPAS 247</span>
-                  </div>
-                </div>
-                <p className="font-semibold text-slate-800 dark:text-slate-200">
-                  Quét mã để thanh toán {totalAmount.toLocaleString('vi-VN')} đ
-                </p>
-                <p className="text-[11px] text-slate-500 font-mono">
-                  Nội dung chuyển khoản: <strong>{bookingCode}</strong>
-                </p>
-              </div>
-            )}
-
-            {/* Test Action Buttons for Buổi 7 (Ca 1 & Ca 2) */}
-            <div className="pt-2 space-y-2">
-              <div className="flex gap-2">
-                <button
-                  type="button"
-                  onClick={handlePayCancelMidway}
-                  className="flex-1 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 py-2.5 rounded-xl text-xs font-bold transition-all"
-                  title="Kiểm thử Ca 2: Hủy thanh toán giữa chừng, đơn giữ nguyên trạng thái chờ"
-                >
-                  Hủy thanh toán giữa chừng (Ca 2)
-                </button>
-
-                <button
-                  type="button"
-                  onClick={handlePaySandboxSuccess}
-                  className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-xl text-xs font-bold shadow-md shadow-emerald-900/20 active:scale-95 transition-all"
-                  title="Kiểm thử Ca 1: Thanh toán Sandbox thành công"
-                >
-                  Xác nhận thanh toán thành công (Ca 1)
-                </button>
-              </div>
-              <p className="text-[10px] text-center text-slate-400">
-                Nhấn vào một trong hai nút để thực thi và quan sát máy trạng thái đơn hàng Buổi 7.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Step 3: Success state (Ca 1 verified) */}
-        {step === 'success' && (
-          <div className="text-center py-6 space-y-4 text-xs">
-            <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto">
-              <CheckCircle2 className="w-8 h-8" />
-            </div>
-            <div>
-              <span className="text-[11px] font-bold text-emerald-600 uppercase tracking-wider block">
-                Ca 1: Thanh Toán Sandbox Thành Công (HTTP 200 OK)
-              </span>
-              <h2 className="text-lg font-black text-slate-900 dark:text-white mt-1">
-                Đã Xác Nhận Đơn Hàng #{bookingCode}
-              </h2>
-              <p className="text-slate-500 mt-1">
-                Giao dịch được ghi nhận qua cổng Sandbox. Mã tham chiếu: <code>SBX2026100709513783250B</code>
-              </p>
-            </div>
-
-            <div className="p-3 bg-slate-50 dark:bg-slate-800 rounded-xl text-left font-mono text-[11px] space-y-1 text-slate-700 dark:text-slate-300">
-              <div>• Trạng thái đơn: <strong className="text-emerald-600">da_thanh_toan (confirmed)</strong></div>
-              <div>• Suất chỗ: <strong className="text-blue-600">seats_sold += {pax}</strong> (Đã chốt)</div>
-              <div>• Số tiền thực thu: <strong>{totalAmount.toLocaleString('vi-VN')} VNĐ</strong></div>
-            </div>
-
-            <button
-              onClick={onClose}
-              className="w-full bg-slate-900 hover:bg-slate-800 text-white py-2.5 rounded-xl font-bold"
-            >
-              Đóng và quay lại
-            </button>
-          </div>
-        )}
-
-        {/* Step 4: Cancelled state (Ca 2 verified) */}
-        {step === 'cancelled' && (
-          <div className="text-center py-6 space-y-4 text-xs">
-            <div className="w-14 h-14 bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 rounded-full flex items-center justify-center mx-auto">
-              <AlertTriangle className="w-8 h-8" />
-            </div>
-            <div>
-              <span className="text-[11px] font-bold text-amber-600 uppercase tracking-wider block">
-                Ca 2: Hủy Thanh Toán Giữa Chừng
-              </span>
-              <h2 className="text-lg font-black text-slate-900 dark:text-white mt-1">
-                Đơn Hàng Giữ Nguyên Trạng Thái Chờ
-              </h2>
-              <p className="text-slate-500 mt-1">
-                Khách hủy giữa chừng tại cổng thanh toán. Đơn vẫn giữ chỗ an toàn, không bị trừ sai số chỗ!
-              </p>
-            </div>
-
-            <div className="p-3 bg-slate-50 dark:bg-slate-800 rounded-xl text-left font-mono text-[11px] space-y-1 text-slate-700 dark:text-slate-300">
-              <div>• Trạng thái đơn: <strong className="text-amber-600">pending_payment (holding)</strong></div>
-              <div>• Thời gian giữ chỗ còn lại: <strong>{formatTimer(secondsRemaining)}</strong></div>
-              <div>• Tồn kho: <strong className="text-emerald-600">Bảo toàn nguyên vẹn</strong></div>
-            </div>
-
-            <button
-              onClick={onClose}
-              className="w-full bg-slate-900 hover:bg-slate-800 text-white py-2.5 rounded-xl font-bold"
-            >
-              Đóng và tiếp tục duyệt tour
-            </button>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+                <div className="flex justify-between items-center text-slate

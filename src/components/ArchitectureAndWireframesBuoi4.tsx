@@ -129,7 +129,7 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
           chinh_sach_huy: "Hoàn 100% trước 7 ngày, 50% trước 3 ngày, không hoàn hủy trong vòng 24h"
         }
       }
-    },
+    }
     {
       id: 'post-hold-booking',
       method: 'POST',

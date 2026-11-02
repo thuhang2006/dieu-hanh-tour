@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onChangeAppMode('client');
                 onSelectTab('client-home');
               }}
-              className="text-left flex items-center gap-3 focus:outline-none"
+              className="text-left flex items-center gap-3 focus:outline-none cursor-pointer"
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-blue-600 text-white flex items-center justify-center font-bold shadow-md shadow-cyan-900/30">
                 <Compass className="w-6 h-6 text-white" />
@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onChangeAppMode('client');
                   onSelectTab('client-home');
                 }}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   appMode === 'client'
                     ? 'bg-blue-600 text-white shadow-sm'
                     : 'text-slate-400 hover:text-white'
@@ -87,7 +87,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onChangeAppMode('admin');
                   onSelectTab('dashboard');
                 }}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   appMode === 'admin'
                     ? 'bg-indigo-600 text-white shadow-sm'
                     : 'text-slate-400 hover:text-white'
@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               onClick={onToggleTheme}
-              className="p-2 rounded-xl text-slate-400 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-800 transition-colors"
+              className="p-2 rounded-xl text-slate-400 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-800 transition-colors cursor-pointer"
               title={isDarkMode ? 'Chế độ Sáng' : 'Chế độ Tối'}
             >
               {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-cyan-300" />}
@@ -114,7 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="flex items-center gap-1">
               <button
                 onClick={() => onSelectTab('client-home')}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'client-home'
                     ? 'bg-blue-600 text-white'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
@@ -125,7 +125,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 onClick={() => onSelectTab('tour-detail')}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'tour-detail'
                     ? 'bg-indigo-600 text-white'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
@@ -139,7 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="flex items-center gap-1">
               <button
                 onClick={() => onSelectTab('dashboard')}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'dashboard'
                     ? 'bg-blue-600 text-white'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
@@ -151,7 +151,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 onClick={() => onSelectTab('tour-detail')}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'tour-detail'
                     ? 'bg-indigo-600 text-white'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
@@ -163,7 +163,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 onClick={() => onSelectTab('test-runner')}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'test-runner'
                     ? 'bg-emerald-600 text-white'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
@@ -175,7 +175,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 onClick={() => onSelectTab('schema')}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'schema'
                     ? 'bg-slate-800 text-cyan-300 border border-cyan-500/40'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
@@ -187,7 +187,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 onClick={() => onSelectTab('deliverables')}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   activeTab === 'deliverables'
                     ? 'bg-amber-600 text-white'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'

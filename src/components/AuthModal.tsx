@@ -37,7 +37,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   const [activeTab, setActiveTab] = useState<'login' | 'register'>(initialMode);
   const [showPassword, setShowPassword] = useState(false);
 
-  // Phân loại kiểu đăng nhập: 'customer' (Khách tự do) hoặc 'admin' (Quản trị viên / Sổ tay)
+  // Phân loại kiểu đăng nhập: 'customer' (Khách tự do) hoặc 'admin' (Quản trị viên)
   const [loginModeType, setLoginModeType] = useState<'customer' | 'admin'>('customer');
 
   // Login form state
@@ -60,11 +60,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({
     setLoginModeType(mode);
     setLoginError(null);
     if (mode === 'customer') {
-      // Khách: Để trống hoàn toàn các ô input để tự nhập
       setLoginEmail('');
       setLoginPassword('');
     } else {
-      // Quản trị: Mặc định chọn sẵn tài khoản admin đầu tiên trong danh sách (hoặc để sẵn thông tin đã lưu)
       const defaultAdmin = OFFICIAL_HANDBOOK_ROLES[0];
       if (defaultAdmin) {
         setLoginEmail(defaultAdmin.email);
@@ -83,7 +81,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       return;
     }
 
-    // Match against official handbook users
     const found = COURSE_HANDBOOK_USERS.find(
       u => u.email.toLowerCase() === trimmedEmail || u.name.toLowerCase().includes(trimmedEmail)
     );
@@ -92,7 +89,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       onLoginSuccess(found);
       onClose();
     } else {
-      // Dynamic customer account
       const customUser: AppUser = {
         id: `usr-${Date.now()}`,
         name: trimmedEmail.split('@')[0].toUpperCase(),
@@ -104,7 +100,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         avatarBg: 'bg-[#0088cc]',
         tierBadge: '⭐ Thành Viên Mới',
         tierColor: 'bg-blue-50 text-[#0088cc] border-blue-200 dark:bg-blue-950 dark:text-blue-300',
-        description: 'Tài khoản khách hàng đăng nhập tự do',
+        description: 'Tài khoản khách hàng',
         handbookPurpose: 'Trải nghiệm tra cứu tour và đặt phòng trực tuyến',
         password: loginPassword || '123456'
       };
@@ -143,10 +139,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       phone: regPhone.trim() || '0912.000.111',
       avatarText: regName.trim().substring(0, 2).toUpperCase(),
       avatarBg: 'bg-emerald-600',
-      tierBadge: '⭐ Thành Viên Mới (Thưởng 100 điểm)',
+      tierBadge: '⭐ Thành Viên Mới',
       tierColor: 'bg-emerald-50 text-emerald-700 border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300',
-      description: 'Tài khoản khách hàng mới đăng ký theo quy trình Milestone 1 Buổi 5',
-      handbookPurpose: 'Trải nghiệm tìm kiếm và đặt tour du lịch với tư cách khách hàng mới',
+      description: 'Tài khoản khách hàng đăng ký mới',
+      handbookPurpose: 'Trải nghiệm tìm kiếm và đặt tour du lịch',
       password: regPassword
     };
 
@@ -165,16 +161,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               {activeTab === 'login' ? <LogIn className="w-5 h-5" /> : <UserPlus className="w-5 h-5" />}
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <h3 className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-white">
-                  {activeTab === 'login' ? 'Đăng Nhập Hệ Thống' : 'Đăng Ký Khách Hàng Mới'}
-                </h3>
-                <span className="text-[10px] bg-indigo-50 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300 font-bold px-2 py-0.5 rounded-full border border-indigo-200 dark:border-indigo-800">
-                  Sổ Tay CSE703073
-                </span>
-              </div>
+              <h3 className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-white">
+                {activeTab === 'login' ? 'Đăng Nhập Hệ Thống' : 'Đăng Ký Khách Hàng Mới'}
+              </h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                Xác thực phân quyền RBAC & Quản lý phiên theo đề tài ĐT-13
+                Hệ thống quản lý và điều hành dịch vụ du lịch trực tuyến
               </p>
             </div>
           </div>
@@ -251,7 +242,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   }`}
                 >
                   <Shield className="w-3.5 h-3.5" />
-                  <span>Quản Trị / Sổ Tay</span>
+                  <span>Quản Trị Hệ Thống</span>
                 </button>
               </div>
 
@@ -264,11 +255,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 )}
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 flex items-center justify-between">
-                    <span>Email / Tài khoản</span>
-                    {loginModeType === 'customer' && (
-                      <span className="text-[10px] text-slate-400 font-normal">Nhập email bất kỳ để đăng nhập tự do</span>
-                    )}
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    Email / Tài khoản
                   </label>
                   <div className="relative">
                     <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -317,7 +305,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <div className="flex items-center justify-between text-xs pt-1">
                   <label className="flex items-center gap-2 cursor-pointer text-slate-600 dark:text-slate-400">
                     <input type="checkbox" defaultChecked className="rounded text-[#0088cc] focus:ring-0" />
-                    <span>Ghi nhớ phiên đăng nhập (JWT)</span>
+                    <span>Ghi nhớ phiên đăng nhập</span>
                   </label>
                 </div>
 
@@ -336,10 +324,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   <div className="flex items-center justify-between mb-2.5">
                     <span className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
                       <Sparkles className="w-4 h-4 text-amber-500" />
-                      <span>Chọn Nhanh Tài Khoản Quản Trị & Sổ Tay (1-Click)</span>
-                    </span>
-                    <span className="text-[10px] text-slate-400 font-mono">
-                      Đề tài ĐT-13
+                      <span>Chọn Nhanh Tài Khoản Quản Trị (1-Click)</span>
                     </span>
                   </div>
 
@@ -399,24 +384,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   </div>
                 </div>
               )}
-
-              {/* Chế độ Khách vãng lai */}
-              <div className="pt-1">
-                <button
-                  type="button"
-                  onClick={() => {
-                    onLoginSuccess(null);
-                    onClose();
-                  }}
-                  className="w-full py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors flex items-center justify-between text-xs text-slate-600 dark:text-slate-400 cursor-pointer"
-                >
-                  <div className="flex items-center gap-2">
-                    <UserX className="w-4 h-4 text-slate-400" />
-                    <span>Duyệt với tư cách Khách Vãng Lai (Guest — Không cần đăng nhập)</span>
-                  </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
-                </button>
-              </div>
             </>
           ) : (
             /* Form Đăng Ký Khách Hàng */
@@ -438,7 +405,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                     required
                     value={regName}
                     onChange={(e) => setRegName(e.target.value)}
-                    placeholder="Ví dụ: Nguyễn Thu Hà"
+                    placeholder="Ví dụ: Nguyễn Văn A"
                     className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-xs focus:outline-none focus:ring-2 focus:ring-[#0088cc]"
                   />
                 </div>
@@ -455,7 +422,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                     required
                     value={regEmail}
                     onChange={(e) => setRegEmail(e.target.value)}
-                    placeholder="thuhang@example.com"
+                    placeholder="example@gmail.com"
                     className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-xs focus:outline-none focus:ring-2 focus:ring-[#0088cc]"
                   />
                 </div>
@@ -527,17 +494,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         </div>
 
         {/* Modal Footer Note */}
-        <div className="px-6 py-3 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-100 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400 flex items-center justify-between">
+        <div className="px-6 py-3 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-100 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400 flex items-center justify-center">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-            <span className="text-[11px]">Bảo mật Bcrypt & JWT Token theo chuẩn ISO/IEC 27001</span>
+            <span className="text-[11px]">Bảo mật thông tin khách hàng tuyệt đối</span>
           </div>
-
-          <span className="text-[11px] font-mono text-slate-400 hidden sm:inline">
-            Phenikaa Uni • CSE703073
-          </span>
         </div>
       </div>
     </div>
-  );s
+  );
 };

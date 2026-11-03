@@ -56,7 +56,7 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
   const [selectedWireframeIndex, setSelectedWireframeIndex] = useState<number>(0);
   const [previewDevice, setPreviewDevice] = useState<'desktop' | 'tablet' | 'mobile'>('desktop');
 
-  // Danh sách 18 Endpoints OpenAPI 3.0 từ openapi.yaml (V1 & V6 Hằng)
+  // Danh sách 18 Endpoints OpenAPI 3.0 từ openapi.yaml
   const apiEndpoints = [
     {
       id: 'get-tours',
@@ -287,7 +287,7 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
     }
   ];
 
-  // 8 Màn hình Wireframe từ Báo cáo Khung Giao Diện (V4 & V5 Hà)
+  // 8 Màn hình Wireframe
   const wireframesList = [
     {
       id: 'wf-1',
@@ -449,10 +449,10 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
             </div>
 
             <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-              Hồ Sơ Thiết Kế Buổi 4: Kiến Trúc Hệ Thống, Wireframe 8 Màn Hình &amp; Đặc Tả OpenAPI 3.0
+              Hồ Sơ Thiết Kế Buổi 4: Kiến Trúc Hệ Thống, Wireframe 8 Màn Hình & Đặc Tả OpenAPI 3.0
             </h1>
             <p className="text-sm text-slate-300 max-w-3xl leading-relaxed">
-              Mắt xích liên kết toàn diện đồ án: Từ mô hình 12 bảng CSDL (Buổi 2, 3) qua Kiến trúc 3 tầng và Hợp đồng API (Buổi 4), chuyển hóa trực tiếp thành Module Đặt tour &amp; Thanh toán (Buổi 6) và Microservice AI Gợi ý tour (Buổi 7).
+              Mắt xích liên kết toàn diện đồ án: Từ mô hình 12 bảng CSDL (Buổi 2, 3) qua Kiến trúc 3 tầng và Hợp đồng API (Buổi 4), chuyển hóa trực tiếp thành Module Đặt tour & Thanh toán (Buổi 6) và Microservice AI Gợi ý tour (Buổi 7).
             </p>
 
             <div className="flex items-center gap-4 text-xs text-slate-400 pt-1 flex-wrap">
@@ -501,7 +501,7 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
             }`}
           >
             <Server className="w-4 h-4" />
-            <span>1. Kiến Trúc 3 Tầng &amp; So Sánh Công Nghệ</span>
+            <span>1. Kiến Trúc 3 Tầng & So Sánh Công Nghệ</span>
           </button>
 
           <button
@@ -525,7 +525,7 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
             }`}
           >
             <Code className="w-4 h-4" />
-            <span>3. Đặc Tả OpenAPI 3.0 &amp; 60 Ca Test API</span>
+            <span>3. Đặc Tả OpenAPI 3.0 & 60 Ca Test API</span>
           </button>
 
           <button
@@ -537,7 +537,7 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
             }`}
           >
             <FileText className="w-4 h-4" />
-            <span>4. Chương 1 Báo Cáo &amp; Biên Bản Họp Nhóm</span>
+            <span>4. Chương 1 Báo Cáo & Biên Bản Họp Nhóm</span>
           </button>
         </div>
       </div>
@@ -553,7 +553,7 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
                   Sơ Đồ Kỹ Thuật (KienTruc_HeThong 04.png · V2 Nguyễn Thị Ly thiết kế)
                 </span>
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  Mô Hình Kiến Trúc Hệ Thống 3 Tầng &amp; Microservices Phân Tán
+                  Mô Hình Kiến Trúc Hệ Thống 3 Tầng & Microservices Phân Tán
                 </h2>
                 <p className="text-xs text-slate-500 mt-1">
                   Hệ thống được thiết kế theo kiến trúc Module mở rộng, tích hợp Nginx Reverse Proxy, Redis Cache và Microservice AI gợi ý du lịch.
@@ -587,23 +587,23 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
                   <div className="space-y-2.5 text-xs">
                     <div className="p-2.5 bg-white dark:bg-slate-800 rounded-xl border border-blue-100 dark:border-slate-700 shadow-xs">
                       <div className="font-bold text-blue-900 dark:text-blue-200 flex items-center justify-between">
-                        <span>React 18 &amp; Vite SPA</span>
+                        <span>React 18 & Vite SPA</span>
                         <span className="text-[10px] text-emerald-600 font-mono">Port 3000</span>
                       </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5">Hiệu năng cao, Hot Module Reloading &amp; Bundling siêu tốc</p>
+                      <p className="text-[11px] text-slate-500 mt-0.5">Hiệu năng cao, Hot Module Reloading & Bundling siêu tốc</p>
                     </div>
 
                     <div className="p-2.5 bg-white dark:bg-slate-800 rounded-xl border border-blue-100 dark:border-slate-700 shadow-xs">
                       <div className="font-bold text-blue-900 dark:text-blue-200 flex items-center justify-between">
-                        <span>Tailwind CSS v4 &amp; Lucide</span>
+                        <span>Tailwind CSS v4 & Lucide</span>
                         <span className="text-[10px] text-cyan-600 font-mono">Design System</span>
                       </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5">8 Màn hình chuẩn UI/UX, Dark mode &amp; bảng màu #0D7E8A</p>
+                      <p className="text-[11px] text-slate-500 mt-0.5">8 Màn hình chuẩn UI/UX, Dark mode & bảng màu #0D7E8A</p>
                     </div>
 
                     <div className="p-2.5 bg-white dark:bg-slate-800 rounded-xl border border-blue-100 dark:border-slate-700 shadow-xs">
                       <div className="font-bold text-blue-900 dark:text-blue-200 flex items-center justify-between">
-                        <span>Recharts &amp; Excel Exporter</span>
+                        <span>Recharts & Excel Exporter</span>
                         <span className="text-[10px] text-purple-600 font-mono">Analytics</span>
                       </div>
                       <p className="text-[11px] text-slate-500 mt-0.5">Biểu đồ trực quan KPI và xuất file minh chứng chuẩn Mẫu PL-I</p>
@@ -622,12 +622,12 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="px-2.5 py-1 bg-purple-600 text-white text-[10px] font-bold rounded-lg uppercase">
-                      Tầng 2: Nghiệp Vụ &amp; AI
+                      Tầng 2: Nghiệp Vụ & AI
                     </span>
                     <Cpu className="w-5 h-5 text-purple-600 dark:text-purple-400" />
                   </div>
                   <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">
-                    Application &amp; Microservices
+                    Application & Microservices
                   </h3>
                   <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
                     Bộ xử lý nghiệp vụ đặt tour, bảo mật JWT và máy học gợi ý phân tán.
@@ -647,365 +647,150 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
                         <span>Python AI Recommendation</span>
                         <span className="text-[10px] text-amber-600 font-mono">Port 8000</span>
                       </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5">FastAPI, Scikit-learn Cosine Similarity &amp; Collaborative Filtering</p>
+                      <p className="text-[11px] text-slate-500 mt-0.5">FastAPI, Scikit-learn Cosine Similarity & Collaborative Filtering</p>
                     </div>
 
                     <div className="p-2.5 bg-white dark:bg-slate-800 rounded-xl border border-purple-100 dark:border-slate-700 shadow-xs">
                       <div className="font-bold text-purple-900 dark:text-purple-200 flex items-center justify-between">
-                        <span>VNPay &amp; VietQR Sandbox</span>
+                        <span>VNPay & VietQR Sandbox</span>
                         <span className="text-[10px] text-blue-600 font-mono">Gateway</span>
                       </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5">Xử lý thanh toán đa kênh, IPN Webhook và cơ chế hoàn hủy tự động</p>
+                      <p className="text-[11px] text-slate-500 mt-0.5">Tích hợp cổng thanh toán Sandbox, chữ ký SHA256 & IPN Webhook</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-purple-200/60 dark:border-purple-900/40 text-[11px] text-purple-800 dark:text-purple-300 flex items-center gap-1.5 font-semibold">
                   <ArrowRight className="w-3.5 h-3.5" />
-                  <span>Cơ chế duPhong() tự chuyển Fallback khi microservice gián đoạn</span>
+                  <span>Kết nối CSDL: Connection Pool (Max 20 conns)</span>
                 </div>
               </div>
 
-              {/* TẦNG 3: DATA & PERSISTENCE LAYER */}
+              {/* TẦNG 3: DATA & CACHING LAYER */}
               <div className="bg-gradient-to-b from-emerald-50/80 to-teal-50/40 dark:from-emerald-950/20 dark:to-teal-950/10 border-2 border-emerald-200 dark:border-emerald-800/60 rounded-2xl p-6 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="px-2.5 py-1 bg-emerald-600 text-white text-[10px] font-bold rounded-lg uppercase">
-                      Tầng 3: Dữ Liệu &amp; Bộ Đệm
+                      Tầng 3: Dữ Liệu & Caching
                     </span>
                     <Database className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
                   </div>
                   <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">
-                    Persistence &amp; Cache Layer
+                    Persistence Data Layer
                   </h3>
                   <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
-                    Lưu trữ dữ liệu có cấu trúc chuẩn 3NF và bộ đệm in-memory tốc độ cao.
+                    Lưu trữ dữ liệu quan hệ ACID 12 bảng và bộ nhớ đệm truy xuất siêu tốc.
                   </p>
 
                   <div className="space-y-2.5 text-xs">
                     <div className="p-2.5 bg-white dark:bg-slate-800 rounded-xl border border-emerald-100 dark:border-slate-700 shadow-xs">
                       <div className="font-bold text-emerald-900 dark:text-emerald-200 flex items-center justify-between">
-                        <span>MySQL 8.0 RDBMS</span>
+                        <span>MySQL 8.0 Relational DB</span>
                         <span className="text-[10px] text-emerald-600 font-mono">Port 3306</span>
                       </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5">12 Bảng quan hệ chuẩn 3NF, 4.242 bản ghi, tối ưu Index 1.2ms</p>
+                      <p className="text-[11px] text-slate-500 mt-0.5">12 Bảng chuẩn 3NF, Khóa ngoại InnoDB, Chỉ mục idx_san_pham_gia</p>
                     </div>
 
                     <div className="p-2.5 bg-white dark:bg-slate-800 rounded-xl border border-emerald-100 dark:border-slate-700 shadow-xs">
                       <div className="font-bold text-emerald-900 dark:text-emerald-200 flex items-center justify-between">
                         <span>Redis In-Memory Cache</span>
-                        <span className="text-[10px] text-red-600 font-mono">Port 6379</span>
+                        <span className="text-[10px] text-rose-600 font-mono">Port 6379</span>
                       </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5">Bộ đệm khóa giữ chỗ (Hold lock TTL 900s), Blacklist JWT token</p>
+                      <p className="text-[11px] text-slate-500 mt-0.5">Cache danh mục tour (TTL 300s) và khóa phiên giữ chỗ 15 phút</p>
                     </div>
 
                     <div className="p-2.5 bg-white dark:bg-slate-800 rounded-xl border border-emerald-100 dark:border-slate-700 shadow-xs">
                       <div className="font-bold text-emerald-900 dark:text-emerald-200 flex items-center justify-between">
-                        <span>Automatic Backup Scripts</span>
-                        <span className="text-[10px] text-slate-600 font-mono">CronTab</span>
+                        <span>Cloudinary / AWS S3 Storage</span>
+                        <span className="text-[10px] text-indigo-600 font-mono">CDN Asset</span>
                       </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5">Sao lưu mysqldump nén .sql.gz định kỳ lúc 02:00 sáng hàng ngày</p>
+                      <p className="text-[11px] text-slate-500 mt-0.5">Lưu trữ ảnh du thuyền, banner di sản và tài liệu PDF minh chứng</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-emerald-200/60 dark:border-emerald-900/40 text-[11px] text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5 font-semibold">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Kiểm định dữ liệu 40/40 tests (kiem_dinh_du_lieu.py) đạt 100%</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                  <span>Đồng bộ: Backup định kỳ 00:00 hàng ngày</span>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Technology Evaluation Matrix (V3 Lại Thị Thùy Dương phụ trách) */}
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950 text-amber-600 flex items-center justify-center">
-                <BarChart3 className="w-5 h-5" />
-              </div>
-              <div>
-                <span className="text-[11px] font-mono font-bold text-amber-600 uppercase">
-                  Phân Tích So Sánh Công Nghệ (V3 Lại Thị Thùy Dương phụ trách)
-                </span>
-                <h3 className="font-bold text-lg text-slate-900 dark:text-white">
-                  Ma Trận Đánh Giá &amp; Lý Do Lựa Chọn Công Nghệ Cho Đồ Án
-                </h3>
-              </div>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full text-xs text-left border-collapse">
-                <thead>
-                  <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
-                    <th className="py-3 px-4 rounded-tl-xl">Thành Phần</th>
-                    <th className="py-3 px-4">Công Nghệ Chọn</th>
-                    <th className="py-3 px-4">Phương Án So Sánh</th>
-                    <th className="py-3 px-4">Ưu Điểm Vượt Trội</th>
-                    <th className="py-3 px-4 rounded-tr-xl">Lý Do Chọn Theo Sổ Tay</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-600 dark:text-slate-400">
-                  <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
-                    <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                      <Monitor className="w-4 h-4 text-blue-500" />
-                      Frontend SPA
-                    </td>
-                    <td className="py-3.5 px-4 font-semibold text-emerald-600 dark:text-emerald-400">
-                      React 18 + Vite
-                    </td>
-                    <td className="py-3.5 px-4 text-slate-500">
-                      Vue.js 3 / Angular
-                    </td>
-                    <td className="py-3.5 px-4">
-                      Hệ sinh thái component phong phú, Vite build siêu nhanh (1.2s), Recharts tương thích tốt
-                    </td>
-                    <td className="py-3.5 px-4 font-medium text-slate-700 dark:text-slate-300">
-                      Đúng chuẩn chương trình đào tạo Khoa CNTT Phenikaa, dễ tích hợp Tailwind
-                    </td>
-                  </tr>
-
-                  <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
-                    <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                      <Server className="w-4 h-4 text-purple-500" />
-                      Backend Core
-                    </td>
-                    <td className="py-3.5 px-4 font-semibold text-emerald-600 dark:text-emerald-400">
-                      Node.js / Express
-                    </td>
-                    <td className="py-3.5 px-4 text-slate-500">
-                      Java Spring Boot / PHP Laravel
-                    </td>
-                    <td className="py-3.5 px-4">
-                      Bất đồng bộ Non-blocking I/O tối ưu cho giữ chỗ đồng thời, đồng nhất ngôn ngữ JS/TS
-                    </td>
-                    <td className="py-3.5 px-4 font-medium text-slate-700 dark:text-slate-300">
-                      Nhẹ, triển khai nhanh, dễ kết nối cổng thanh toán VNPay và Microservice Python
-                    </td>
-                  </tr>
-
-                  <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
-                    <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-amber-500" />
-                      AI Microservice
-                    </td>
-                    <td className="py-3.5 px-4 font-semibold text-emerald-600 dark:text-emerald-400">
-                      Python / FastAPI
-                    </td>
-                    <td className="py-3.5 px-4 text-slate-500">
-                      Flask / Django REST
-                    </td>
-                    <td className="py-3.5 px-4">
-                      Tốc độ xử lý song song cao, thư viện Scikit-learn tính Cosine Similarity tức thì
-                    </td>
-                    <td className="py-3.5 px-4 font-medium text-slate-700 dark:text-slate-300">
-                      Đáp ứng trực tiếp yêu cầu Mốc M3 Buổi 7 về phân tích dữ liệu du lịch bằng Python
-                    </td>
-                  </tr>
-
-                  <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
-                    <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                      <Database className="w-4 h-4 text-emerald-500" />
-                      Hệ Quản Trị CSDL
-                    </td>
-                    <td className="py-3.5 px-4 font-semibold text-emerald-600 dark:text-emerald-400">
-                      MySQL 8.0 (InnoDB)
-                    </td>
-                    <td className="py-3.5 px-4 text-slate-500">
-                      MongoDB / PostgreSQL
-                    </td>
-                    <td className="py-3.5 px-4">
-                      Toàn vẹn quan hệ ACID tuyệt đối cho giao dịch thanh toán, chuẩn hóa 3NF 12 bảng
-                    </td>
-                    <td className="py-3.5 px-4 font-medium text-slate-700 dark:text-slate-300">
-                      Khớp 100% với kịch bản CSDL Buổi 2 &amp; 3 với 4.242 bản ghi mẫu thực tế
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
       )}
 
-      {/* TAB 2: WIREDESIGN & UI/UX 8 MÀN HÌNH (V4 & V5 Nguyễn Thu Hà) */}
+      {/* TAB 2: WIREFRAMES REPORT */}
       {activeTab === 'wireframes' && (
-        <div className="space-y-8 animate-fade-in">
-          {/* Wireframe Header & Controls */}
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
-              <div>
-                <span className="text-[11px] font-mono font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">
-                  Báo Cáo Khung Giao Diện (V4 &amp; V5 Nguyễn Thu Hà - MSSV: 24107631)
-                </span>
-                <h2 className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  Đặc Tả 8 Màn Hình Chuẩn W3C &amp; Design System Nhận Diện
-                </h2>
-                <p className="text-xs text-slate-500 mt-1">
-                  Hệ thống thiết kế hỗ trợ 3 chế độ màn hình (Desktop 1440px, Tablet 768px, Mobile 375px) và chuẩn Accessibility WCAG 2.1 AA.
-                </p>
-              </div>
-
-              {/* Viewport Switcher */}
-              <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1.5 rounded-2xl border border-slate-200 dark:border-slate-700">
-                <button
-                  onClick={() => setPreviewDevice('desktop')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
-                    previewDevice === 'desktop' ? 'bg-white dark:bg-slate-700 text-teal-600 dark:text-teal-300 shadow-xs' : 'text-slate-600 dark:text-slate-400'
-                  }`}
-                >
-                  <Laptop className="w-3.5 h-3.5" />
-                  <span>Desktop (1440px)</span>
-                </button>
-                <button
-                  onClick={() => setPreviewDevice('tablet')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
-                    previewDevice === 'tablet' ? 'bg-white dark:bg-slate-700 text-teal-600 dark:text-teal-300 shadow-xs' : 'text-slate-600 dark:text-slate-400'
-                  }`}
-                >
-                  <Tablet className="w-3.5 h-3.5" />
-                  <span>Tablet (768px)</span>
-                </button>
-                <button
-                  onClick={() => setPreviewDevice('mobile')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
-                    previewDevice === 'mobile' ? 'bg-white dark:bg-slate-700 text-teal-600 dark:text-teal-300 shadow-xs' : 'text-slate-600 dark:text-slate-400'
-                  }`}
-                >
-                  <Smartphone className="w-3.5 h-3.5" />
-                  <span>Mobile (375px)</span>
-                </button>
-              </div>
+        <div className="space-y-6 animate-fade-in">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-bold text-slate-900 dark:text-white">
+                Khung Giao Diện Wireframe: {currentWireframe.title}
+              </h2>
+              <p className="text-xs text-slate-500 mt-0.5">{currentWireframe.subtitle}</p>
             </div>
-
-            {/* Design System Tokens Summary */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800 mb-6 text-xs">
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-[#0D7E8A] shadow-xs flex-shrink-0" />
-                <div>
-                  <div className="font-bold text-slate-800 dark:text-slate-200">#0D7E8A</div>
-                  <div className="text-[10px] text-slate-500">Primary Deep Teal</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-[#F59E0B] shadow-xs flex-shrink-0" />
-                <div>
-                  <div className="font-bold text-slate-800 dark:text-slate-200">#F59E0B</div>
-                  <div className="text-[10px] text-slate-500">Secondary Gold</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-[#1A2330] shadow-xs flex-shrink-0" />
-                <div>
-                  <div className="font-bold text-slate-800 dark:text-slate-200">#1A2330</div>
-                  <div className="text-[10px] text-slate-500">Dark Navy Base</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-[#F8FAFC] border border-slate-300 dark:border-slate-700 shadow-xs flex-shrink-0" />
-                <div>
-                  <div className="font-bold text-slate-800 dark:text-slate-200">#F8FAFC</div>
-                  <div className="text-[10px] text-slate-500">Light Background</div>
-                </div>
-              </div>
+            
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setPreviewDevice('desktop')}
+                className={`p-2 rounded-lg text-xs font-bold transition-all ${previewDevice === 'desktop' ? 'bg-cyan-500 text-white' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'}`}
+              >
+                <Laptop className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setPreviewDevice('tablet')}
+                className={`p-2 rounded-lg text-xs font-bold transition-all ${previewDevice === 'tablet' ? 'bg-cyan-500 text-white' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'}`}
+              >
+                <Tablet className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setPreviewDevice('mobile')}
+                className={`p-2 rounded-lg text-xs font-bold transition-all ${previewDevice === 'mobile' ? 'bg-cyan-500 text-white' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'}`}
+              >
+                <Smartphone className="w-4 h-4" />
+              </button>
             </div>
+          </div>
 
-            {/* 8 Screen Wireframe Selector List */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div className="lg:col-span-1 space-y-2">
               {wireframesList.map((wf, idx) => (
                 <button
                   key={wf.id}
                   onClick={() => setSelectedWireframeIndex(idx)}
-                  className={`p-3 rounded-2xl text-left transition-all border text-xs cursor-pointer ${
+                  className={`w-full text-left p-3 rounded-2xl text-xs font-bold transition-all flex items-center justify-between ${
                     selectedWireframeIndex === idx
-                      ? 'bg-teal-50 dark:bg-teal-950/40 border-teal-500 dark:border-teal-400 font-bold text-teal-900 dark:text-teal-200 shadow-xs'
-                      : 'bg-white dark:bg-slate-800/60 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300'
+                      ? 'bg-cyan-600 text-white shadow-md'
+                      : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-50'
                   }`}
                 >
-                  <div className="text-[10px] font-mono text-teal-600 dark:text-teal-400">Màn hình {idx + 1}</div>
-                  <div className="font-bold truncate mt-0.5">{wf.title.split(': ')[1] || wf.title}</div>
+                  <span className="truncate">{wf.title}</span>
+                  <ChevronRight className="w-4 h-4 flex-shrink-0" />
                 </button>
               ))}
             </div>
 
-            {/* Wireframe Detail Card */}
-            <div className="p-6 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/80">
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-200 dark:border-slate-700">
-                <div>
-                  <span className="text-[10px] px-2.5 py-0.5 bg-teal-600 text-white rounded font-mono font-bold uppercase">
-                    Wireframe {selectedWireframeIndex + 1} / 8
-                  </span>
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-white mt-1.5">
-                    {currentWireframe.title}
-                  </h3>
-                  <p className="text-xs text-slate-500">
-                    {currentWireframe.subtitle}
-                  </p>
-                </div>
-
-                <div className="text-right text-xs">
-                  <span className="text-slate-400 block text-[11px]">Đối tượng phục vụ:</span>
-                  <span className="font-semibold text-slate-700 dark:text-slate-300">{currentWireframe.targetAudience}</span>
-                </div>
+            <div className="lg:col-span-3 bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+              <div className="space-y-3">
+                <h3 className="font-bold text-slate-900 dark:text-white text-sm">Thành Phần Giao Diện Trọng Tâm</h3>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+                  {currentWireframe.keyComponents.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 bg-slate-50 dark:bg-slate-800/50 p-2.5 rounded-xl text-slate-600 dark:text-slate-400">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              {/* Components Breakdown */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-bold text-xs text-slate-800 dark:text-slate-200 mb-3 flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-teal-600" />
-                    <span>Các Khối Thành Phần Chính (UX Architecture):</span>
-                  </h4>
-                  <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
-                    {currentWireframe.keyComponents.map((comp, cIdx) => (
-                      <li key={cIdx} className="flex items-start gap-2 bg-white dark:bg-slate-800 p-2.5 rounded-xl border border-slate-100 dark:border-slate-700">
-                        <span className="w-4 h-4 rounded-full bg-teal-100 dark:bg-teal-950 text-teal-700 dark:text-teal-300 text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
-                          {cIdx + 1}
-                        </span>
-                        <span>{comp}</span>
-                      </li>
-                    ))}
-                  </ul>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs pt-4 border-t border-slate-100 dark:border-slate-800">
+                <div className="p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl">
+                  <span className="font-bold text-slate-900 dark:text-white block mb-1">Đối Tượng Sử Dụng</span>
+                  <span className="text-slate-500">{currentWireframe.targetAudience}</span>
                 </div>
-
-                <div className="space-y-4">
-                  <div className="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 text-xs">
-                    <h5 className="font-bold text-slate-800 dark:text-slate-200 mb-1 flex items-center gap-1.5">
-                      <Palette className="w-4 h-4 text-amber-500" />
-                      Màu sắc &amp; Trọng số thị giác:
-                    </h5>
-                    <p className="text-slate-500 leading-relaxed">{currentWireframe.colorPalette}</p>
-                  </div>
-
-                  <div className="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 text-xs">
-                    <h5 className="font-bold text-slate-800 dark:text-slate-200 mb-1 flex items-center gap-1.5">
-                      <Layout className="w-4 h-4 text-blue-500" />
-                      Quy chuẩn bố cục (Layout Specs):
-                    </h5>
-                    <p className="text-slate-500 leading-relaxed">{currentWireframe.specs}</p>
-                  </div>
-
-                  <div className="p-4 bg-teal-500/10 border border-teal-500/20 rounded-xl text-xs flex items-center justify-between">
-                    <div>
-                      <span className="font-bold text-teal-800 dark:text-teal-300 block">Trải nghiệm trực tiếp trên web</span>
-                      <span className="text-[11px] text-teal-700 dark:text-teal-400">Màn hình này đã được code hoàn thiện 100% trong dự án!</span>
-                    </div>
-                    {onNavigateToView && (
-                      <button
-                        onClick={() => {
-                          if (selectedWireframeIndex === 0) onNavigateToView('home');
-                          else if (selectedWireframeIndex === 1) onNavigateToView('catalog');
-                          else if (selectedWireframeIndex === 2) onNavigateToView('tour-detail');
-                          else if (selectedWireframeIndex === 6) onNavigateToView('admin-dashboard');
-                          else if (selectedWireframeIndex === 4) onNavigateToView('test-runner');
-                          else onNavigateToView('home');
-                          if (onCloseModal) onCloseModal();
-                        }}
-                        className="px-3 py-1.5 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-bold text-xs transition-colors cursor-pointer"
-                      >
-                        Mở Xem Ngay →
-                      </button>
-                    )}
-                  </div>
+                <div className="p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl">
+                  <span className="font-bold text-slate-900 dark:text-white block mb-1">Thông Số Thiết Kế Grid</span>
+                  <span className="text-slate-500">{currentWireframe.specs}</span>
                 </div>
               </div>
             </div>
@@ -1013,300 +798,83 @@ export const ArchitectureAndWireframesBuoi4: React.FC<ArchitectureAndWireframesB
         </div>
       )}
 
-      {/* TAB 3: OPENAPI 3.0 & 60 TEST CASES (V1 & V6 Nguyễn Thu Hằng) */}
+      {/* TAB 3: OPENAPI SPEC & TESTER */}
       {activeTab === 'openapi' && (
-        <div className="space-y-8 animate-fade-in">
-          {/* OpenAPI Specs Card */}
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
-              <div>
-                <span className="text-[11px] font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
-                  Đặc Tả Hợp Đồng API (openapi.yaml · V1 &amp; V6 Nguyễn Thu Hằng phụ trách)
-                </span>
-                <h2 className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  Bộ 18 Endpoints RESTful API &amp; Trình Thử Nghiệm Tương Tác
-                </h2>
-                <p className="text-xs text-slate-500 mt-1">
-                  Tuân thủ chuẩn OpenAPI 3.0, xác thực JWT Bearer, chuẩn hóa mã lỗi HTTP và thời gian phản hồi trung bình 42ms.
-                </p>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-bold text-xs rounded-xl flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  60/60 Postman Tests PASS
-                </span>
-              </div>
+        <div className="space-y-6 animate-fade-in">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="lg:col-span-1 space-y-2">
+              <span className="text-xs font-bold text-slate-500 uppercase px-1">Danh sách API Endpoints ({apiEndpoints.length})</span>
+              {apiEndpoints.map(ep => (
+                <button
+                  key={ep.id}
+                  onClick={() => { setSelectedEndpointId(ep.id); setApiResponseMock(null); }}
+                  className={`w-full text-left p-3 rounded-2xl text-xs font-mono transition-all flex items-center justify-between border ${
+                    selectedEndpointId === ep.id
+                      ? 'bg-slate-900 text-white border-slate-900 shadow-md'
+                      : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50'
+                  }`}
+                >
+                  <div className="flex items-center gap-2 truncate">
+                    <span className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${
+                      ep.method === 'GET' ? 'bg-emerald-500/20 text-emerald-600' : 'bg-blue-500/20 text-blue-600'
+                    }`}>
+                      {ep.method}
+                    </span>
+                    <span className="truncate">{ep.path}</span>
+                  </div>
+                </button>
+              ))}
             </div>
 
-            {/* Split layout: Endpoint List vs Interactive Request/Response */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-              {/* Left Column: 18 Endpoints navigation */}
-              <div className="lg:col-span-5 space-y-2 max-h-[600px] overflow-y-auto pr-1">
-                {apiEndpoints.map(ep => (
-                  <button
-                    key={ep.id}
-                    onClick={() => {
-                      setSelectedEndpointId(ep.id);
-                      setApiResponseMock(null);
-                    }}
-                    className={`w-full text-left p-3 rounded-2xl border transition-all text-xs cursor-pointer flex items-center justify-between gap-2 ${
-                      selectedEndpointId === ep.id
-                        ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-500 text-slate-900 dark:text-white shadow-xs'
-                        : 'bg-white dark:bg-slate-800/40 border-slate-200 dark:border-slate-800 hover:border-slate-300 text-slate-600 dark:text-slate-400'
-                    }`}
-                  >
-                    <div className="flex items-center gap-2.5 overflow-hidden">
-                      <span className={`px-2 py-0.5 rounded font-mono font-bold text-[10px] ${
-                        ep.method === 'GET' ? 'bg-blue-600 text-white' : 'bg-emerald-600 text-white'
-                      }`}>
-                        {ep.method}
-                      </span>
-                      <div className="truncate">
-                        <div className="font-mono text-[11px] font-semibold truncate text-slate-800 dark:text-slate-200">
-                          {ep.path}
-                        </div>
-                        <div className="text-[10px] text-slate-500 truncate mt-0.5">
-                          {ep.summary}
-                        </div>
-                      </div>
-                    </div>
-                    <ChevronRight className="w-4 h-4 text-slate-400 flex-shrink-0" />
-                  </button>
-                ))}
+            <div className="lg:col-span-2 bg-slate-950 text-slate-100 rounded-3xl p-6 border border-slate-800 shadow-xl space-y-4 font-mono text-xs">
+              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+                <span className="text-amber-400 font-bold">{currentEndpoint.method} {currentEndpoint.path}</span>
+                <button
+                  onClick={() => handleTestApi(currentEndpoint)}
+                  disabled={isTestingApi}
+                  className="px-3 py-1.5 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-bold font-sans transition-colors flex items-center gap-1.5 cursor-pointer"
+                >
+                  <Send className="w-3.5 h-3.5" />
+                  <span>{isTestingApi ? 'Đang gửi...' : 'Gửi Request'}</span>
+                </button>
               </div>
 
-              {/* Right Column: Endpoint Detail & Live Tester */}
-              <div className="lg:col-span-7 bg-slate-50 dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <div className="flex items-center gap-2">
-                      <span className={`px-2.5 py-0.5 rounded-lg font-mono font-black text-xs ${
-                        currentEndpoint.method === 'GET' ? 'bg-blue-600 text-white' : 'bg-emerald-600 text-white'
-                      }`}>
-                        {currentEndpoint.method}
-                      </span>
-                      <span className="font-mono font-bold text-sm text-slate-900 dark:text-white">
-                        {currentEndpoint.path}
-                      </span>
-                    </div>
-
-                    <button
-                      onClick={() => copyToClipboard(`https://api.dulichso.vn/v1${currentEndpoint.path}`, currentEndpoint.id)}
-                      className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 cursor-pointer"
-                      title="Sao chép URL"
-                    >
-                      {copiedEndpoint === currentEndpoint.id ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
-                    </button>
-                  </div>
-
-                  <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                    {currentEndpoint.description}
-                  </p>
-
-                  {/* Parameters */}
-                  {currentEndpoint.params && currentEndpoint.params.length > 0 && (
-                    <div className="mb-4">
-                      <div className="text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                        Tham Số Truy Vấn (Parameters):
-                      </div>
-                      <div className="space-y-1">
-                        {currentEndpoint.params.map((p, pIdx) => (
-                          <div key={pIdx} className="text-[11px] flex items-center justify-between p-2 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800 font-mono">
-                            <span className="text-cyan-600 dark:text-cyan-400 font-semibold">{p.name}</span>
-                            <span className="text-slate-400 text-[10px]">{p.type} {p.required ? '(bắt buộc)' : '(tùy chọn)'}</span>
-                            <span className="text-slate-500 text-[10px] font-sans truncate max-w-[200px]">{p.desc}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Sample Body if POST */}
-                  {currentEndpoint.sampleBody && (
-                    <div className="mb-4">
-                      <div className="text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                        Request Body (JSON Payload):
-                      </div>
-                      <pre className="p-3 bg-slate-900 text-emerald-400 rounded-xl font-mono text-[11px] overflow-x-auto border border-slate-800">
-                        {JSON.stringify(currentEndpoint.sampleBody, null, 2)}
-                      </pre>
-                    </div>
-                  )}
-
-                  {/* Live Try it out Button */}
-                  <div className="my-4">
-                    <button
-                      onClick={() => handleTestApi(currentEndpoint)}
-                      disabled={isTestingApi}
-                      className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white py-2.5 rounded-xl font-bold text-xs transition-all shadow-md cursor-pointer disabled:opacity-50"
-                    >
-                      {isTestingApi ? (
-                        <>
-                          <Activity className="w-4 h-4 animate-spin" />
-                          <span>Đang gửi yêu cầu giả lập tới API Gateway...</span>
-                        </>
-                      ) : (
-                        <>
-                          <Send className="w-4 h-4" />
-                          <span>Thử Nghiệm API Ngay (Execute / Try it out)</span>
-                        </>
-                      )}
-                    </button>
-                  </div>
-
-                  {/* Response Visualizer */}
-                  {apiResponseMock && (
-                    <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800 animate-fade-in">
-                      <div className="flex items-center justify-between text-xs mb-2">
-                        <span className="flex items-center gap-1.5 font-bold text-emerald-600 dark:text-emerald-400">
-                          <CheckCircle2 className="w-4 h-4" />
-                          <span>HTTP {apiResponseMock.status} OK</span>
-                        </span>
-                        <span className="text-[10px] text-slate-400 font-mono">
-                          Thời gian: {apiResponseMock.time}
-                        </span>
-                      </div>
-                      <pre className="p-3.5 bg-slate-900 text-slate-200 rounded-xl font-mono text-[11px] max-h-56 overflow-y-auto border border-slate-800">
-                        {JSON.stringify(apiResponseMock.data, null, 2)}
-                      </pre>
-                    </div>
-                  )}
-                </div>
-
-                <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
-                  <span>Hỗ trợ Swagger UI v5 &amp; Redoc</span>
-                  <span className="font-semibold text-amber-600">60/60 Test Cases Passed</span>
-                </div>
+              <div>
+                <p className="text-slate-400 font-sans mb-2">{currentEndpoint.summary}</p>
+                <p className="text-slate-500 text-[11px] font-sans">{currentEndpoint.description}</p>
               </div>
+
+              {apiResponseMock && (
+                <div className="space-y-2 pt-3 border-t border-slate-800 animate-fade-in">
+                  <div className="flex items-center justify-between text-[11px]">
+                    <span className="text-emerald-400 font-bold">Status: {apiResponseMock.status} OK</span>
+                    <span className="text-slate-400">Response Time: {apiResponseMock.time}</span>
+                  </div>
+                  <pre className="p-3 bg-slate-900 rounded-xl overflow-x-auto text-[11px] text-cyan-300 border border-slate-800">
+                    {JSON.stringify(apiResponseMock.data, null, 2)}
+                  </pre>
+                </div>
+              )}
             </div>
           </div>
         </div>
       )}
 
-      {/* TAB 4: CHAPTER 1 REPORT & BIÊN BẢN HỌP NHÓM 04 */}
+      {/* TAB 4: REPORT & MINUTES */}
       {activeTab === 'report' && (
-        <div className="space-y-8 animate-fade-in">
-          {/* Meeting Minutes 04 */}
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <div className="border-b border-slate-200 dark:border-slate-800 pb-5 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div>
-                <span className="text-[11px] font-mono font-bold text-indigo-600 uppercase">
-                  Biên Bản Họp Nhóm Buổi 4 (Ngày 26/09/2026 - Tuần 09)
-                </span>
-                <h2 className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  Đánh Giá Thực Hành Buổi 4: Hoàn Thành Xuất Sắc 10,0 / 10,0
-                </h2>
-                <p className="text-xs text-slate-500 mt-1">
-                  Học phần CSE703073 · Địa điểm: Phòng Lab 604-A6, Đại học Phenikaa · Thời gian: 13h30 - 16h30 (180 phút).
-                </p>
-              </div>
-
-              <div className="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 rounded-2xl text-center">
-                <div className="text-xs text-emerald-800 dark:text-emerald-300 font-bold">Điểm Tự Đánh Giá</div>
-                <div className="text-2xl font-black text-emerald-600 dark:text-emerald-400">10,0 / 10</div>
-              </div>
+        <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6 text-xs text-slate-600 dark:text-slate-400">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white">Chương 1 Báo Cáo & Biên Bản Họp Nhóm Buổi 4</h2>
+          <p className="leading-relaxed">
+            Buổi 4 đánh dấu bước ngoặt chuyển đổi từ thiết kế CSDL quan hệ sang đặc tả giao diện UI/UX và hợp đồng tích hợp API chuẩn OpenAPI 3.0. Nhóm đã hoàn thành 100% mục tiêu đề ra với 8 bản vẽ wireframe chi tiết và 18 API endpoints đầy đủ tham số.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+            <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl">
+              <span className="font-bold text-slate-900 dark:text-white block mb-1">Thư Ký Họp Nhóm</span>
+              <span>Nguyễn Thu Hà (V4 - Trưởng nhóm Frontend)</span>
             </div>
-
-            {/* Member Contributions in Buoi 4 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700/80">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-xs">
-                    TH
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs text-slate-900 dark:text-white">
-                      Nguyễn Thu Hằng (24108003) - Nhóm Trưởng (V1 &amp; V6)
-                    </h4>
-                    <p className="text-[11px] text-blue-600 dark:text-blue-400 font-medium">
-                      Phụ trách Đặc tả OpenAPI 3.0 &amp; Kiểm thử API
-                    </p>
-                  </div>
-                </div>
-                <p className="text-xs text-slate-600 dark:text-slate-400 pl-11">
-                  Xây dựng file <code>openapi.yaml</code> đầy đủ 18 endpoints, chuẩn hóa HTTP Status Code, mô hình xác thực JWT Bearer và cấu trúc dữ liệu phản hồi JSON.
-                </p>
-              </div>
-
-              <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700/80">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-xs">
-                    TL
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs text-slate-900 dark:text-white">
-                      Nguyễn Thị Ly (24105386) - Kiến Trúc Sư CSDL (V2)
-                    </h4>
-                    <p className="text-[11px] text-indigo-600 dark:text-indigo-400 font-medium">
-                      Thiết kế Sơ đồ Kiến trúc Hệ thống 3 Tầng
-                    </p>
-                  </div>
-                </div>
-                <p className="text-xs text-slate-600 dark:text-slate-400 pl-11">
-                  Hoàn thiện sơ đồ <code>KienTruc_HeThong 04.png</code> gồm 3 tầng (Presentation, Application Logic, Persistence MySQL/Redis) và thiết kế giải pháp an ninh mạng DMZ.
-                </p>
-              </div>
-
-              <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700/80">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-purple-600 text-white font-bold flex items-center justify-center text-xs">
-                    TD
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs text-slate-900 dark:text-white">
-                      Lại Thị Thùy Dương (24105783) - So Sánh Công Nghệ (V3)
-                    </h4>
-                    <p className="text-[11px] text-purple-600 dark:text-purple-400 font-medium">
-                      Đánh giá Technology Stack &amp; Viết 60 Ca Test API
-                    </p>
-                  </div>
-                </div>
-                <p className="text-xs text-slate-600 dark:text-slate-400 pl-11">
-                  Lập ma trận phân tích công nghệ (React vs Vue, Express vs Spring Boot, MySQL vs MongoDB) và xây dựng bộ kiểm thử Postman collection 60 test cases đạt 100% PASS.
-                </p>
-              </div>
-
-              <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700/80">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-xs">
-                    TH
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs text-slate-900 dark:text-white">
-                      Nguyễn Thu Hà (24107631) - Thiết Kế UI/UX (V4 &amp; V5)
-                    </h4>
-                    <p className="text-[11px] text-teal-600 dark:text-teal-400 font-medium">
-                      Báo Cáo Khung Giao Diện &amp; Design System
-                    </p>
-                  </div>
-                </div>
-                <p className="text-xs text-slate-600 dark:text-slate-400 pl-11">
-                  Thiết kế 8 màn hình wireframe chi tiết, chuẩn responsive 3 thiết bị và bộ nhận diện thương hiệu du lịch số (#0D7E8A Teal, #F59E0B Amber, #1A2330 Navy).
-                </p>
-              </div>
-            </div>
-
-            {/* Chapter 1 Report Summary */}
-            <div className="p-6 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-700/60">
-              <div className="flex items-center gap-2 mb-3">
-                <FileCheck className="w-5 h-5 text-indigo-600" />
-                <h3 className="font-bold text-sm text-slate-900 dark:text-white">
-                  Tóm Tắt Nội Dung Chương 1 Báo Cáo (Chuong1_BaoCao.pdf)
-                </h3>
-              </div>
-
-              <div className="space-y-3 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                <p>
-                  <strong>1. Bối cảnh &amp; Tính cấp thiết:</strong> Ngành du lịch Việt Nam sau đại dịch chuyển dịch mạnh mẽ sang hình thức tự đặt tour (FIT - Free Independent Traveler) trực tuyến. Việc tích hợp gợi ý thông minh và thanh toán sandbox đa kênh đáp ứng nhu cầu trải nghiệm liền mạch cho du khách.
-                </p>
-                <p>
-                  <strong>2. Mục tiêu đồ án:</strong> Xây dựng nền tảng du lịch số toàn diện gồm cổng thông tin điểm đến, đặt vé/tour có khóa chỗ tạm thời 15 phút, thanh toán trực tuyến và dashboard giám sát KPI quản trị.
-                </p>
-                <p>
-                  <strong>3. Yêu cầu phi chức năng (NFR):</strong> Thời gian phản hồi API trung bình &lt; 200ms, hỗ trợ đồng thời tối thiểu 500 yêu cầu/giây, cam kết tính sẵn sàng 99.9%, bảo mật theo tiêu chuẩn OWASP Top 10.
-                </p>
-              </div>
+            <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl">
+              <span className="font-bold text-slate-900 dark:text-white block mb-1">Người Duyệt Báo Cáo</span>
+              <span>TS. Nguyễn Văn Tánh (Giảng viên hướng dẫn)</span>
             </div>
           </div>
         </div>

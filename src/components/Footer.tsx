@@ -6,7 +6,7 @@ interface FooterProps {
   onOpenMinhChung?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenMinhChung }) => {
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-12 pb-8 text-xs text-slate-500 dark:text-slate-400 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,21 +78,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenMinhChung }) =
             </h4>
             <ul className="space-y-1.5 text-[11px]">
               <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Tour du lịch trọn gói trong nước</li>
-              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Khách sạn &amp; Resort nghỉ dưỡng</li>
-              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Vé tham quan, cáp treo &amp; công viên</li>
-              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Trải nghiệm văn hóa &amp; làng nghề bản địa</li>
-              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Thuê xe du lịch &amp; đưa đón sân bay</li>
+              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Khách sạn & Resort nghỉ dưỡng</li>
+              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Vé tham quan, cáp treo & công viên</li>
+              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Trải nghiệm văn hóa & làng nghề bản địa</li>
+              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Thuê xe du lịch & đưa đón sân bay</li>
             </ul>
           </div>
 
           {/* Col 3 */}
           <div className="space-y-2.5">
             <h4 className="font-extrabold text-xs text-slate-800 dark:text-slate-200 uppercase tracking-wider">
-              CHÍNH SÁCH &amp; ĐIỀU KHOẢN
+              CHÍNH SÁCH & ĐIỀU KHOẢN
             </h4>
             <ul className="space-y-1.5 text-[11px]">
-              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Điều khoản dịch vụ &amp; Đặt chỗ</li>
-              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Chính sách hoàn tiền &amp; Hủy tour</li>
+              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Điều khoản dịch vụ & Đặt chỗ</li>
+              <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Chính sách hoàn tiền & Hủy tour</li>
               <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Chính sách bảo mật thông tin cá nhân</li>
               <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Quy trình xử lý tranh chấp khiếu nại</li>
               <li className="hover:text-[#0088cc] cursor-pointer transition-colors">Bảo hiểm du lịch bắt buộc</li>
@@ -102,7 +102,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenMinhChung }) =
           {/* Col 4 */}
           <div className="space-y-2.5">
             <h4 className="font-extrabold text-xs text-slate-800 dark:text-slate-200 uppercase tracking-wider">
-              LIÊN HỆ &amp; HỖ TRỢ 24/7
+              LIÊN HỆ & HỖ TRỢ 24/7
             </h4>
             <div className="space-y-2 text-[11px]">
               <p className="flex items-center gap-2">
@@ -153,25 +153,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenMinhChung }) =
           </div>
         </div>
 
-        {/* Clean Professional Copyright & Academic Submission */}
-        <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-          <div className="space-y-1">
-            <p className="text-[11px] text-slate-500 dark:text-slate-400">
-              © 2026 CÔNG TY CỔ PHẦN CÔNG NGHỆ &amp; DU LỊCH SỐ VIỆT NAM • Giấy phép kinh doanh lữ hành quốc tế số: 01-999/2026/TCDL-GP LHQT.
-            </p>
-            <p className="text-[10px] text-slate-400 dark:text-slate-500">
-              Mã số doanh nghiệp: 0109886688 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp.
-            </p>
-          </div>
-          {onOpenMinhChung && (
-            <button
-              onClick={onOpenMinhChung}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-[#0088cc] dark:text-sky-400 border border-sky-200 dark:border-sky-800 text-[11px] font-bold hover:bg-sky-100 transition-colors"
-              title="Xem và tải ảnh 9 màn hình và hồ sơ minh chứng kiểm thử"
-            >
-              <span>📁 Hồ sơ minh chứng học phần (Ảnh 9 màn hình)</span>
-            </button>
-          )}
+        {/* Clean Professional Copyright */}
+        <div className="pt-6 border-t border-slate-100 dark:border-slate-800 text-center sm:text-left space-y-1">
+          <p className="text-[11px] text-slate-500 dark:text-slate-400">
+            © 2026 CÔNG TY CỔ PHẦN CÔNG NGHỆ & DU LỊCH SỐ VIỆT NAM • Giấy phép kinh doanh lữ hành quốc tế số: 01-999/2026/TCDL-GP LHQT.
+          </p>
+          <p className="text-[10px] text-slate-400 dark:text-slate-500">
+            Mã số doanh nghiệp: 0109886688 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp.
+          </p>
         </div>
       </div>
     </footer>

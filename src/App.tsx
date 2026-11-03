@@ -10,17 +10,7 @@ import { AccountSwitcherModal } from './components/AccountSwitcherModal';
 import { TestRunnerBuoi8 } from './components/TestRunnerBuoi8';
 import { MinhChungModal } from './components/MinhChungModal';
 import { Footer } from './components/Footer';
-import { 
-  Sun, 
-  Moon, 
-  Award, 
-  Smartphone, 
-  Tablet, 
-  Monitor, 
-  FileSpreadsheet, 
-  CheckCheck 
-} from 'lucide-react';
-import { COURSE_HANDBOOK_USERS, DEFAULT_USER, DEFAULT_CUSTOMER_USER, DEFAULT_ADMIN_USER } from './data/mockUsers';
+import { COURSE_HANDBOOK_USERS, DEFAULT_CUSTOMER_USER, DEFAULT_ADMIN_USER } from './data/mockUsers';
 import { BookingRecord, AppUser } from './types/tour';
 import { getSavedBookings, updateBookingStatus, getSavedWishlist } from './utils/bookingStore';
 
@@ -39,6 +29,10 @@ export default function App() {
     }
     return 'home';
   });
+
+  // Tab đang chọn ở trang chủ ClientHome (hỗ trợ hiển thị 'favorites')
+  const [clientHomeTab, setClientHomeTab] = useState<string>('all');
+
   const [selectedTourId, setSelectedTourId] = useState<number>(() => {
     if (typeof window !== 'undefined') {
       const id = new URLSearchParams(window.location.search).get('tourId');
@@ -56,7 +50,6 @@ export default function App() {
   });
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  // User Account State - Supports Customer, Admin, and Guest Mode
   const [currentUser, setCurrentUser] = useState<AppUser | null>(() => {
     const saved = localStorage.getItem('dulichso_current_user');
     if (saved) {
@@ -69,7 +62,7 @@ export default function App() {
         return DEFAULT_CUSTOMER_USER;
       }
     }
-    return DEFAULT_CUSTOMER_USER; // Mặc định là tài khoản Khách hàng VIP Trần Văn Nam để trải nghiệm duyệt & đặt tour
+    return DEFAULT_CUSTOMER_USER;
   });
 
   const [authModalMode, setAuthModalMode] = useState<'login' | 'register'>('login');
@@ -78,7 +71,6 @@ export default function App() {
   const [isMyBookingsModalOpen, setIsMyBookingsModalOpen] = useState(false);
   const [isMinhChungModalOpen, setIsMinhChungModalOpen] = useState(false);
 
-  // Persisted bookings and wishlist counts
   const [bookings, setBookings] = useState<BookingRecord[]>([]);
   const [wishlist, setWishlist] = useState<number[]>([]);
 
@@ -108,23 +100,6 @@ export default function App() {
       document.documentElement.setAttribute('data-theme', 'light');
       document.body.classList.remove('dark');
     }
-
-    (window as any).__setAppView = (view: 'home' | 'catalog' | 'tour-detail', tourId = 1) => {
-      setCurrentView(view);
-      setSelectedTourId(tourId);
-    };
-    (window as any).__setAppTheme = (dark: boolean) => {
-      setIsDarkMode(dark);
-      if (dark) {
-        document.documentElement.classList.add('dark');
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.body.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.body.classList.remove('dark');
-      }
-    };
   }, []);
 
   const toggleTheme = () => {
@@ -135,13 +110,13 @@ export default function App() {
         document.documentElement.setAttribute('data-theme', 'dark');
         document.body.classList.add('dark');
         localStorage.setItem('dulichso-theme', 'dark');
-        setToastMessage('Đã bật Chủ Đề Tối 🌙 (CSS tokens). Ấn F5 trang vẫn giữ nguyên màu!');
+        setToastMessage('Đã bật Chủ Đề Tối 🌙');
       } else {
         document.documentElement.classList.remove('dark');
         document.documentElement.setAttribute('data-theme', 'light');
         document.body.classList.remove('dark');
         localStorage.setItem('dulichso-theme', 'light');
-        setToastMessage('Đã bật Chủ Đề Sáng ☀️ (CSS tokens). Ấn F5 trang vẫn giữ nguyên màu!');
+        setToastMessage('Đã bật Chủ Đề Sáng ☀️');
       }
       setTimeout(() => setToastMessage(null), 3500);
       return next;
@@ -152,23 +127,15 @@ export default function App() {
     if (role === 'guest') {
       setCurrentUser(null);
       localStorage.setItem('dulichso_current_user', 'guest');
-      setToastMessage('Đang duyệt web ở Chế Độ Khách Vãng Lai (Guest)');
-      if (currentView === 'admin-dashboard') {
-        setCurrentView('home');
-        setActiveNav('home');
-      }
+      setToastMessage('Đang duyệt web ở Chế Độ Khách Vãng Lai');
     } else if (role === 'customer') {
       setCurrentUser(DEFAULT_CUSTOMER_USER);
       localStorage.setItem('dulichso_current_user', JSON.stringify(DEFAULT_CUSTOMER_USER));
-      setToastMessage(`Đã chuyển sang tài khoản Khách Hàng: ${DEFAULT_CUSTOMER_USER.name} (${DEFAULT_CUSTOMER_USER.roleTitle})`);
-      if (currentView === 'admin-dashboard') {
-        setCurrentView('home');
-        setActiveNav('home');
-      }
+      setToastMessage(`Đã chuyển sang tài khoản Khách Hàng: ${DEFAULT_CUSTOMER_USER.name}`);
     } else if (role === 'admin') {
       setCurrentUser(DEFAULT_ADMIN_USER);
       localStorage.setItem('dulichso_current_user', JSON.stringify(DEFAULT_ADMIN_USER));
-      setToastMessage(`Đã chuyển sang tài khoản Quản Trị: ${DEFAULT_ADMIN_USER.name} (${DEFAULT_ADMIN_USER.roleTitle})`);
+      setToastMessage(`Đã chuyển sang tài khoản Quản Trị: ${DEFAULT_ADMIN_USER.name}`);
     }
     setTimeout(() => setToastMessage(null), 3500);
   };
@@ -177,11 +144,10 @@ export default function App() {
     if (!user) {
       setCurrentUser(null);
       localStorage.setItem('dulichso_current_user', 'guest');
-      setToastMessage('Đang duyệt web ở Chế Độ Khách Vãng Lai (Guest)');
     } else {
       setCurrentUser(user);
       localStorage.setItem('dulichso_current_user', JSON.stringify(user));
-      setToastMessage(`Đăng nhập thành công: ${user.name} (${user.roleTitle})`);
+      setToastMessage(`Đăng nhập thành công: ${user.name}`);
     }
     setTimeout(() => setToastMessage(null), 3500);
   };
@@ -189,41 +155,33 @@ export default function App() {
   const handleLogout = () => {
     setCurrentUser(null);
     localStorage.setItem('dulichso_current_user', 'guest');
-    setToastMessage('Đã đăng xuất! Chuyển về chế độ Khách Vãng Lai.');
-    if (currentView !== 'home' && currentView !== 'catalog' && currentView !== 'tour-detail') {
-      setCurrentView('home');
-      setActiveNav('home');
-    }
+    setToastMessage('Đã đăng xuất!');
     setTimeout(() => setToastMessage(null), 3500);
   };
 
   const handleOpenAdmin = () => {
-    if (!currentUser) {
-      setToastMessage('Vui lòng đăng nhập tài khoản Quản trị viên để truy cập trang quản trị.');
+    if (!currentUser || currentUser.role !== 'admin') {
+      setToastMessage('Vui lòng đăng nhập tài khoản Quản trị viên.');
       setAuthModalMode('login');
       setIsAuthModalOpen(true);
       setTimeout(() => setToastMessage(null), 4000);
       return;
     }
-
-    if (currentUser.role !== 'admin') {
-      setToastMessage(`Tài khoản ${currentUser.name} không có quyền quản trị. Đang mở chọn tài khoản Quản trị viên.`);
-      setAuthModalMode('login');
-      setIsAuthModalOpen(true);
-      setTimeout(() => setToastMessage(null), 4000);
-      return;
-    }
-
     setCurrentView('admin-dashboard');
     setActiveNav('admin-dashboard');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Nav handler
   const handleSelectNav = (nav: string) => {
     if (nav === 'home') {
       setCurrentView('home');
       setActiveNav('home');
+      setClientHomeTab('all');
+    } else if (nav === 'favorites') {
+      // Điều hướng trực tiếp sang tab Tour Yêu Thích
+      setCurrentView('home');
+      setActiveNav('home');
+      setClientHomeTab('favorites');
     } else if (nav === 'tour') {
       setCatalogFilters({ type: 'tour', destination: '', date: '' });
       setCurrentView('catalog');
@@ -243,8 +201,6 @@ export default function App() {
     } else if (nav === 'buoi8') {
       setCurrentView('buoi8');
       setActiveNav('buoi8');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
     } else if (nav === 'admin-dashboard') {
       handleOpenAdmin();
       return;
@@ -267,14 +223,13 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
-      {/* Toast Notification */}
       {toastMessage && (
         <div className="fixed top-24 right-6 z-50 p-4 bg-emerald-600 text-white rounded-2xl shadow-2xl text-xs font-bold animate-fade-in flex items-center gap-2">
           <span>{toastMessage}</span>
         </div>
       )}
 
-      {/* Header with Login / Logout & Real Website Controls */}
+      {/* Header */}
       <Header
         currentView={currentView}
         activeNav={activeNav}
@@ -283,7 +238,7 @@ export default function App() {
         bookingsCount={bookings.length}
         onOpenMyBookings={() => {
           if (!currentUser) {
-            setToastMessage('Vui lòng đăng nhập để xem các đơn tour đã đặt.');
+            setToastMessage('Vui lòng đăng nhập để xem đơn tour.');
             setAuthModalMode('login');
             setIsAuthModalOpen(true);
             setTimeout(() => setToastMessage(null), 3500);
@@ -293,10 +248,14 @@ export default function App() {
         }}
         wishlistCount={wishlist.length}
         onOpenWishlist={() => {
-          setCatalogFilters({ type: 'all', destination: '', date: '' });
-          setCurrentView('catalog');
-          setActiveNav('tour');
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          // Bấm vào biểu tượng Tim / Wishlist ở Header sẽ mở danh sách yêu thích
+          setCurrentView('home');
+          setActiveNav('home');
+          setClientHomeTab('favorites');
+          setTimeout(() => {
+            const section = document.getElementById('tour-list-section');
+            if (section) section.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
         }}
         isDarkMode={isDarkMode}
         onToggleTheme={toggleTheme}
@@ -310,12 +269,11 @@ export default function App() {
         onLogout={handleLogout}
       />
 
-
-      {/* Main Page Content */}
+      {/* Main Content */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* VIEW 1: CLIENT HOME */}
         {currentView === 'home' && (
           <ClientHome
+            initialTab={clientHomeTab}
             onSelectTourDetail={handleSelectTour}
             onOpenBookingModal={(tour) => handleSelectTour(tour.id)}
             onNavigateCatalog={handleNavigateCatalogFromHome}
@@ -323,7 +281,6 @@ export default function App() {
           />
         )}
 
-        {/* VIEW 2: FILTER & CATALOG */}
         {currentView === 'catalog' && (
           <TourCatalog
             initialType={catalogFilters.type}
@@ -333,18 +290,19 @@ export default function App() {
             onGoHome={() => {
               setCurrentView('home');
               setActiveNav('home');
+              setClientHomeTab('all');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           />
         )}
 
-        {/* VIEW 3: TOUR DETAIL & RECOMMENDATION */}
         {currentView === 'tour-detail' && (
           <TourDetailWithRecommendation
             tourId={selectedTourId}
             onGoHome={() => {
               setCurrentView('home');
               setActiveNav('home');
+              setClientHomeTab('all');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             onOpenAdmin={handleOpenAdmin}
@@ -358,23 +316,23 @@ export default function App() {
           />
         )}
 
-        {/* VIEW 4: ADMIN DASHBOARD */}
         {currentView === 'admin-dashboard' && (
           <AdminDashboard 
             onBackToCustomer={() => {
               setCurrentView('home');
               setActiveNav('home');
+              setClientHomeTab('all');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           />
         )}
 
-        {/* VIEW 5: BUỔI 08 - MỐC M4 NGHIỆM THU & BÀN GIAO */}
         {currentView === 'buoi8' && (
           <TestRunnerBuoi8
             onNavigateHome={() => {
               setCurrentView('home');
               setActiveNav('home');
+              setClientHomeTab('all');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             onNavigateCatalog={() => {
@@ -388,23 +346,18 @@ export default function App() {
         )}
       </main>
 
-      {/* Professional E-Commerce Footer */}
       <Footer
         onNavigate={(view) => {
-          if (view === 'admin-dashboard') {
-            handleOpenAdmin();
-          }
+          if (view === 'admin-dashboard') handleOpenAdmin();
         }}
         onOpenMinhChung={() => setIsMinhChungModalOpen(true)}
       />
 
-      {/* Minh Chung 9 Screens Modal */}
       <MinhChungModal
         isOpen={isMinhChungModalOpen}
         onClose={() => setIsMinhChungModalOpen(false)}
       />
 
-      {/* Interactive My Bookings Drawer/Modal */}
       <MyBookingsModal
         isOpen={isMyBookingsModalOpen}
         onClose={() => setIsMyBookingsModalOpen(false)}
@@ -417,12 +370,11 @@ export default function App() {
         onCancelHoldBooking={(bkId) => {
           updateBookingStatus(bkId, 'cancelled');
           setBookings(getSavedBookings());
-          setToastMessage(`Đã hủy giữ chỗ đơn ${bkId} thành công.`);
+          setToastMessage(`Đã hủy giữ chỗ đơn ${bkId}.`);
           setTimeout(() => setToastMessage(null), 4000);
         }}
       />
 
-      {/* Authentic Login & Registration Modal */}
       <AuthModal
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
@@ -431,7 +383,6 @@ export default function App() {
         currentUser={currentUser}
       />
 
-      {/* Quick Account Switcher Modal */}
       <AccountSwitcherModal
         isOpen={isAccountSwitcherOpen}
         onClose={() => setIsAccountSwitcherOpen(false)}

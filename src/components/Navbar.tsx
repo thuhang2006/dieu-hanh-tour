@@ -11,14 +11,15 @@ import {
   CheckCircle2,
   Globe,
   Compass,
-  ArrowRightLeft
+  ArrowRightLeft,
+  Heart
 } from 'lucide-react';
 
 interface NavbarProps {
   appMode: 'client' | 'admin';
   onChangeAppMode: (mode: 'client' | 'admin') => void;
-  activeTab: 'client-home' | 'dashboard' | 'tour-detail' | 'test-runner' | 'deliverables' | 'schema';
-  onSelectTab: (tab: 'client-home' | 'dashboard' | 'tour-detail' | 'test-runner' | 'deliverables' | 'schema') => void;
+  activeTab: 'client-home' | 'dashboard' | 'tour-detail' | 'test-runner' | 'deliverables' | 'schema' | 'favorites';
+  onSelectTab: (tab: 'client-home' | 'dashboard' | 'tour-detail' | 'test-runner' | 'deliverables' | 'schema' | 'favorites') => void;
   isDarkMode: boolean;
   onToggleTheme: () => void;
 }
@@ -133,6 +134,18 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <Compass className="w-3.5 h-3.5 text-sky-400" />
                 <span>Chi Tiết Tour (V4)</span>
+              </button>
+
+              <button
+                onClick={() => onSelectTab('favorites')}
+                className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                  activeTab === 'favorites'
+                    ? 'bg-rose-600 text-white'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                }`}
+              >
+                <Heart className="w-3.5 h-3.5 text-rose-400" />
+                <span>Tour Yêu Thích</span>
               </button>
             </div>
           ) : (

@@ -39,7 +39,7 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
   const [serviceType, setServiceType] = useState('all');
   const [departureDate, setDepartureDate] = useState('2026-11-20');
 
-  // Homepage tabs filter for the 16 tours
+  // Homepage tabs filter for tours
   const [activeTab, setActiveTab] = useState<string>('all');
   const [homeSortBy, setHomeSortBy] = useState<string>('featured');
 
@@ -57,9 +57,12 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
     onNavigateCatalog(serviceType, destinationInput, departureDate);
   };
 
-  // Filtered tours on homepage
+  // Filtered tours on homepage (Đã cập nhật bộ lọc theo danh sách yêu thích)
   const displayedTours = useMemo(() => {
     return MOCK_TOURS.filter(tour => {
+      if (activeTab === 'favorites') {
+        return wishlist.includes(tour.id); // Chỉ lấy các tour đã thả tim
+      }
       if (activeTab !== 'all' && tour.type !== activeTab) return false;
       return true;
     }).sort((a, b) => {
@@ -68,7 +71,7 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
       if (homeSortBy === 'rating') return b.rating - a.rating;
       return b.id - a.id;
     });
-  }, [activeTab, homeSortBy]);
+  }, [activeTab, homeSortBy, wishlist]);
 
   const POPULAR_DESTINATIONS = ['Hạ Long', 'Sa Pa', 'Ninh Bình', 'Phú Quốc', 'Đà Nẵng', 'Mộc Châu'];
 
@@ -78,7 +81,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
       {/* 1. HERO BANNER                                                            */}
       {/* ========================================================================= */}
       <div className="relative rounded-3xl overflow-hidden bg-slate-900 min-h-[480px] flex flex-col justify-center items-center text-center p-6 sm:p-12 shadow-2xl border border-slate-800">
-        {/* Background photo */}
         <img
           src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1800&q=80"
           alt="Vịnh Hạ Long"
@@ -86,7 +88,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent" />
 
-        {/* Text Title */}
         <div className="relative z-10 max-w-4xl space-y-4 mb-6">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight">
             Khám Phá Vẻ Đẹp <span className="text-[#FBBF24]">Việt Nam</span>
@@ -107,7 +108,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
           className="relative z-20 w-full max-w-4xl bg-white dark:bg-slate-900 text-slate-900 dark:text-white rounded-3xl p-4 sm:p-5 shadow-2xl border border-slate-100 dark:border-slate-800 space-y-3 transition-colors"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-center">
-            {/* Column 1: Điểm đến du lịch */}
             <div className="text-left p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
               <label className="text-[10px] font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider block mb-1">
                 ĐIỂM ĐẾN DU LỊCH
@@ -124,7 +124,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
               </div>
             </div>
 
-            {/* Column 2: Loại dịch vụ */}
             <div className="text-left p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors border-t sm:border-t-0 sm:border-l border-slate-200 dark:border-slate-800">
               <label className="text-[10px] font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider block mb-1">
                 LOẠI DỊCH VỤ
@@ -145,7 +144,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
               </div>
             </div>
 
-            {/* Column 3: Thời gian khởi hành */}
             <div className="text-left p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800">
               <label className="text-[10px] font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider block mb-1">
                 THỜI GIAN KHỞI HÀNH
@@ -161,7 +159,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
               </div>
             </div>
 
-            {/* Column 4: Search Button */}
             <div>
               <button
                 type="submit"
@@ -173,7 +170,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
             </div>
           </div>
 
-          {/* Quick Destination Tags */}
           <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center gap-2 text-xs">
             <span className="text-[11px] text-slate-400 dark:text-slate-400 font-medium">Gợi ý tìm nhanh:</span>
             {POPULAR_DESTINATIONS.map((dest) => (
@@ -207,7 +203,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Category 1: Tour Trọn Gói */}
           <div 
             onClick={() => onNavigateCatalog('tour')}
             className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-600 hover:shadow-lg transition-all cursor-pointer group flex flex-col justify-between"
@@ -220,7 +215,7 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
                 Tour Trọn Gói
               </h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                Đã bao gồm xe đưa đón, khách sạn, hướng dẫn viên, ăn uống &amp; vé tham quan.
+                Đã bao gồm xe đưa đón, khách sạn, hướng dẫn viên, ăn uống & vé tham quan.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center text-xs font-bold text-[#0088cc] group-hover:translate-x-1 transition-transform">
@@ -229,7 +224,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
             </div>
           </div>
 
-          {/* Category 2: Lưu Trú Nghỉ Dưỡng */}
           <div 
             onClick={() => onNavigateCatalog('stay')}
             className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-600 hover:shadow-lg transition-all cursor-pointer group flex flex-col justify-between"
@@ -242,7 +236,7 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
                 Lưu Trú Nghỉ Dưỡng
               </h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                Resort 5 sao, Villa mặt hồ, khách sạn boutique cao cấp view thung lũng &amp; biển.
+                Resort 5 sao, Villa mặt hồ, khách sạn boutique cao cấp view thung lũng & biển.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center text-xs font-bold text-amber-600 dark:text-amber-400 group-hover:translate-x-1 transition-transform">
@@ -251,7 +245,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
             </div>
           </div>
 
-          {/* Category 3: Vé Thắng Cảnh */}
           <div 
             onClick={() => onNavigateCatalog('ticket')}
             className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-emerald-400 dark:hover:border-emerald-600 hover:shadow-lg transition-all cursor-pointer group flex flex-col justify-between"
@@ -273,7 +266,6 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
             </div>
           </div>
 
-          {/* Category 4: Trải Nghiệm Bản Địa */}
           <div 
             onClick={() => onNavigateCatalog('experience')}
             className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-400 dark:hover:border-purple-600 hover:shadow-lg transition-all cursor-pointer group flex flex-col justify-between"
@@ -304,14 +296,13 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
-              Sản Phẩm &amp; Tour Bán Chạy Nhất
+              Sản Phẩm & Tour Bán Chạy Nhất
             </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
               Được đánh giá cao bởi hơn 12.000+ du khách trong nước và quốc tế
             </p>
           </div>
 
-          {/* Sort By Dropdown */}
           <div className="flex items-center gap-2 self-start sm:self-auto">
             <span className="text-xs text-slate-400 font-semibold">Sắp xếp:</span>
             <select
@@ -327,21 +318,24 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
           </div>
         </div>
 
-        {/* Category Tabs on Homepage */}
+        {/* Category Tabs on Homepage (Đã bổ sung tab Tour Đã Lưu) */}
         <div className="flex items-center gap-2 overflow-x-auto pb-2 text-xs font-bold">
           {[
             { key: 'all', label: `Tất Cả (${MOCK_TOURS.length})` },
             { key: 'tour', label: `Tour Trọn Gói (${MOCK_TOURS.filter(t => t.type === 'tour').length})` },
             { key: 'stay', label: `Lưu Trú Resort (${MOCK_TOURS.filter(t => t.type === 'stay').length})` },
             { key: 'ticket', label: `Vé Tham Quan (${MOCK_TOURS.filter(t => t.type === 'ticket').length})` },
-            { key: 'experience', label: `Trải Nghiệm (${MOCK_TOURS.filter(t => t.type === 'experience').length})` }
+            { key: 'experience', label: `Trải Nghiệm (${MOCK_TOURS.filter(t => t.type === 'experience').length})` },
+            { key: 'favorites', label: `❤️ Tour Đã Lưu (${wishlist.length})` }
           ].map(tab => (
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`px-4 py-2 rounded-2xl whitespace-nowrap transition-all ${
+              className={`px-4 py-2 rounded-2xl whitespace-nowrap transition-all cursor-pointer ${
                 activeTab === tab.key
-                  ? 'bg-[#0088cc] text-white shadow-md shadow-blue-500/20'
+                  ? tab.key === 'favorites' 
+                    ? 'bg-rose-600 text-white shadow-md shadow-rose-500/20' 
+                    : 'bg-[#0088cc] text-white shadow-md shadow-blue-500/20'
                   : 'bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50'
               }`}
             >
@@ -350,186 +344,113 @@ export const ClientHome: React.FC<ClientHomeProps> = ({
           ))}
         </div>
 
-        {/* 16 Tour Cards Grid */}
+        {/* Tour Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {displayedTours.map((tour) => {
-            const isLiked = wishlist.includes(tour.id);
+          {displayedTours.length > 0 ? (
+            displayedTours.map((tour) => {
+              const isLiked = wishlist.includes(tour.id);
 
-            return (
-              <div 
-                key={tour.id}
-                className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
-              >
-                <div>
-                  {/* Photo with Overlay Badges */}
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src={tour.image} 
-                      alt={tour.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                    />
+              return (
+                <div 
+                  key={tour.id}
+                  className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
+                >
+                  <div>
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={tour.image} 
+                        alt={tour.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                      />
 
-                    {/* Category Badge on Top-Left */}
-                    <div className="absolute top-3 left-3 bg-[#0088cc]/90 text-white text-[10px] font-black px-2.5 py-1 rounded-full backdrop-blur-sm shadow-xs uppercase tracking-wider">
-                      {tour.category}
-                    </div>
-
-                    {/* Wishlist Heart Button on Top-Right */}
-                    <button
-                      type="button"
-                      onClick={(e) => handleToggleLike(e, tour.id)}
-                      className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 dark:bg-slate-900/90 flex items-center justify-center text-slate-400 hover:text-rose-500 transition-colors shadow-sm"
-                      title={isLiked ? 'Bỏ lưu yêu thích' : 'Lưu vào yêu thích'}
-                    >
-                      <Heart className={`w-4 h-4 ${isLiked ? 'fill-rose-500 text-rose-500' : ''}`} />
-                    </button>
-
-                    {/* Location on Bottom-Left */}
-                    <div className="absolute bottom-3 left-3 bg-black/60 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1 backdrop-blur-sm">
-                      <MapPin className="w-3 h-3 text-rose-400" />
-                      <span>{tour.province}</span>
-                    </div>
-
-                    {/* Rating on Bottom-Right */}
-                    <div className="absolute bottom-3 right-3 bg-black/60 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1 backdrop-blur-sm">
-                      <Star className="w-3 h-3 text-amber-400 fill-amber-400" />
-                      <span>{tour.rating}</span>
-                      <span className="text-[9px] text-slate-300">({tour.reviews_count})</span>
-                    </div>
-                  </div>
-
-                  <div className="p-5 space-y-3">
-                    <h3 
-                      onClick={() => onSelectTourDetail(tour.id)}
-                      className="font-extrabold text-sm text-slate-900 dark:text-white line-clamp-2 hover:text-[#0088cc] cursor-pointer transition-colors leading-snug"
-                    >
-                      {tour.title}
-                    </h3>
-
-                    {/* Feature bullets */}
-                    {tour.features && (
-                      <div className="space-y-1 text-[11px] text-slate-500 dark:text-slate-400 pt-1">
-                        {tour.features.slice(0, 2).map((feat, idx) => (
-                          <div key={idx} className="flex items-center gap-1.5 line-clamp-1">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#0088cc] flex-shrink-0" />
-                            <span>{feat}</span>
-                          </div>
-                        ))}
+                      <div className="absolute top-3 left-3 bg-[#0088cc]/90 text-white text-[10px] font-black px-2.5 py-1 rounded-full backdrop-blur-sm shadow-xs uppercase tracking-wider">
+                        {tour.category}
                       </div>
-                    )}
-                  </div>
-                </div>
 
-                {/* Price Row & Action Buttons */}
-                <div className="p-5 pt-0">
-                  <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-                    <div>
-                      {tour.original_price && (
-                        <span className="text-[10px] text-slate-400 line-through block font-mono">
-                          {tour.original_price.toLocaleString('vi-VN')} đ
-                        </span>
+                      <button
+                        type="button"
+                        onClick={(e) => handleToggleLike(e, tour.id)}
+                        className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 dark:bg-slate-900/90 flex items-center justify-center text-slate-400 hover:text-rose-500 transition-colors shadow-sm cursor-pointer"
+                        title={isLiked ? 'Bỏ lưu yêu thích' : 'Lưu vào yêu thích'}
+                      >
+                        <Heart className={`w-4 h-4 ${isLiked ? 'fill-rose-500 text-rose-500' : ''}`} />
+                      </button>
+
+                      <div className="absolute bottom-3 left-3 bg-black/60 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1 backdrop-blur-sm">
+                        <MapPin className="w-3 h-3 text-rose-400" />
+                        <span>{tour.province}</span>
+                      </div>
+
+                      <div className="absolute bottom-3 right-3 bg-black/60 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1 backdrop-blur-sm">
+                        <Star className="w-3 h-3 text-amber-400 fill-amber-400" />
+                        <span>{tour.rating}</span>
+                        <span className="text-[9px] text-slate-300">({tour.reviews_count})</span>
+                      </div>
+                    </div>
+
+                    <div className="p-5 space-y-3">
+                      <h3 
+                        onClick={() => onSelectTourDetail(tour.id)}
+                        className="font-extrabold text-sm text-slate-900 dark:text-white line-clamp-2 hover:text-[#0088cc] cursor-pointer transition-colors leading-snug"
+                      >
+                        {tour.title}
+                      </h3>
+
+                      {tour.features && (
+                        <div className="space-y-1 text-[11px] text-slate-500 dark:text-slate-400 pt-1">
+                          {tour.features.slice(0, 2).map((feat, idx) => (
+                            <div key={idx} className="flex items-center gap-1.5 line-clamp-1">
+                              <span className="w-1.5 h-1.5 rounded-full bg-[#0088cc] flex-shrink-0" />
+                              <span>{feat}</span>
+                            </div>
+                          ))}
+                        </div>
                       )}
-                      <span className="text-base font-black text-[#0088cc] font-mono leading-tight">
-                        {tour.base_price.toLocaleString('vi-VN')} đ
-                      </span>
                     </div>
+                  </div>
 
-                    <div className="flex items-center gap-2">
-                      <button
-                        onClick={() => onSelectTourDetail(tour.id)}
-                        className="py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-bold text-slate-700 dark:text-slate-200 transition-colors"
-                      >
-                        Chi tiết
-                      </button>
+                  <div className="p-5 pt-0">
+                    <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                      <div>
+                        {tour.original_price && (
+                          <span className="text-[10px] text-slate-400 line-through block font-mono">
+                            {tour.original_price.toLocaleString('vi-VN')} đ
+                          </span>
+                        )}
+                        <span className="text-base font-black text-[#0088cc] font-mono leading-tight">
+                          {tour.base_price.toLocaleString('vi-VN')} đ
+                        </span>
+                      </div>
 
-                      <button
-                        onClick={() => onSelectTourDetail(tour.id)}
-                        className="py-2 px-4 rounded-xl bg-[#0088cc] hover:bg-[#0077b3] text-white text-xs font-bold shadow-md shadow-blue-500/20 active:scale-95 transition-all"
-                      >
-                        Đặt Ngay
-                      </button>
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => onSelectTourDetail(tour.id)}
+                          className="py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-bold text-slate-700 dark:text-slate-200 transition-colors cursor-pointer"
+                        >
+                          Chi tiết
+                        </button>
+
+                        <button
+                          onClick={() => onSelectTourDetail(tour.id)}
+                          className="py-2 px-4 rounded-xl bg-[#0088cc] hover:bg-[#0077b3] text-white text-xs font-bold shadow-md shadow-blue-500/20 active:scale-95 transition-all cursor-pointer"
+                        >
+                          Đặt Ngay
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
+              );
+            })
+          ) : (
+            <div className="col-span-full py-16 text-center bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-3">
+              <div className="w-12 h-12 rounded-full bg-rose-50 dark:bg-rose-950/50 text-rose-500 flex items-center justify-center mx-auto">
+                <Heart className="w-6 h-6" />
               </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* ========================================================================= */}
-      {/* 4. FEATURE BANNER                                                         */}
-      {/* ========================================================================= */}
-      <div className="bg-slate-50 dark:bg-slate-900/60 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 text-center space-y-8">
-        <div className="max-w-2xl mx-auto space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
-            Tại Sao Hơn 50.000 Khách Hàng Tin Chọn Chúng Tôi?
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-            Chuẩn mực điều hành tour hiện đại, minh bạch và an toàn tuyệt đối
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-          {/* Item 1: Giữ Chỗ 15 Phút */}
-          <div className="bg-white dark:bg-slate-800/80 p-5 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-xs flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-[#0088cc] flex items-center justify-center flex-shrink-0">
-              <Clock className="w-5 h-5" />
+              <p className="text-sm font-bold text-slate-700 dark:text-slate-300">Bạn chưa lưu tour yêu thích nào.</p>
+              <p className="text-xs text-slate-400">Hãy bấm vào biểu tượng trái tim trên các tour bạn quan tâm để lưu vào đây nhé!</p>
             </div>
-            <div>
-              <h4 className="font-extrabold text-xs text-slate-900 dark:text-white">
-                Giữ Chỗ 15 Phút
-              </h4>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                Khóa chỗ theo thời gian thực chống xung đột chỗ (LockForUpdate).
-              </p>
-            </div>
-          </div>
-
-          {/* Item 2: Bảo Hiểm 100% */}
-          <div className="bg-white dark:bg-slate-800/80 p-5 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-xs flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0">
-              <ShieldCheck className="w-5 h-5" />
-            </div>
-            <div>
-              <h4 className="font-extrabold text-xs text-slate-900 dark:text-white">
-                Bảo Hiểm 100%
-              </h4>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                Mọi hành trình đều có bảo hiểm du lịch tối đa 100.000.000 đ/vụ.
-              </p>
-            </div>
-          </div>
-
-          {/* Item 3: Xác Nhận Tức Thì */}
-          <div className="bg-white dark:bg-slate-800/80 p-5 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-xs flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0">
-              <CheckCircle2 className="w-5 h-5" />
-            </div>
-            <div>
-              <h4 className="font-extrabold text-xs text-slate-900 dark:text-white">
-                Xác Nhận Tức Thì
-              </h4>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                Nhận mã QR và phiếu xác nhận điện tử ngay sau khi thanh toán.
-              </p>
-            </div>
-          </div>
-
-          {/* Item 4: Tích Điểm Thưởng */}
-          <div className="bg-white dark:bg-slate-800/80 p-5 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-xs flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-purple-100 dark:bg-purple-950 text-purple-600 dark:text-purple-400 flex items-center justify-center flex-shrink-0">
-              <Sparkles className="w-5 h-5" />
-            </div>
-            <div>
-              <h4 className="font-extrabold text-xs text-slate-900 dark:text-white">
-                Tích Điểm Thưởng
-              </h4>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                Tích lũy hạng thẻ Vàng/Kim Cương để nhận ưu đãi lên đến 15%.
-              </p>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
